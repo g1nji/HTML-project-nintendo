@@ -6,11 +6,112 @@
 
 <style type="text/css">
 
+ul.menu {
+	list-style-type: none;
+	
+	padding: 0;
+	margin: 0;
+	
+}
+
+ul.menu > li {
+	width: 150px;
+	line-height: 50px;
+	float: left;
+	background-color: yellow;
+	border: 1px solid #000;
+	position: relative;
+	text-align: center;
+}
+
+
+ul.menu > li > ul {
+	position: absolute;
+	
+	list-style-type: none;
+	
+	padding: 0;
+	margin: 0;
+}
+
+ul.menu > li > ul > li {
+	background-color: red;
+	display: none;
+}
+
+ul.menu > li > ul > li > a {
+	display: block;
+}
+
+ul.menu > li:hover > ul > li {
+	display:block;
+}
+
 </style>
 
 </head>
 
 <body>
+
+<nav>
+<ul class="menu">
+	<li>닌텐도</li>
+	
+	<li>Nintendo Switch
+		<ul>
+			<li>Nintendo Switch OLED 모델</li>
+			<li>Nintendo Switch</li>
+			<li>Nintendo Switch Lite</li>
+			<li>기능ㆍ특징을 비교</li>
+			<li>주변기기</li>
+			<li>Nintendo Switch Online</li>
+			<li>Nintendo 지킴이 Switch™</li>
+			<li>닌텐도 e숍</li>
+		</ul>
+	</li>
+		
+	<li>닌텐도 3DS
+		<ul>
+			<li>닌텐도 3DS란?</li>
+			<li>New 닌텐도 3DS XL</li>
+			<li>New 닌텐도 2DS XL</li>
+			<li>기타 시리즈</li>
+			<li>닌텐도 e숍</li>
+		</ul>
+	</li>
+
+	<li>소프트웨어
+		<ul>
+			<li>Nintendo Switch 소프트웨어</li>
+			<li>닌텐도 3DS 소프트웨어</li>
+			<li>발매 예정 소프트웨어</li>
+			<li>스마트폰용 앱</li>
+		</ul>
+	</li>
+		
+	<li>고객지원
+		<ul>
+			<li>Nintendo Switch 고객지원</li>
+			<li>Nintendo Switch Online 서포트</li>
+			<li>닌텐도 3DS 고객지원</li>
+			<li>고객지원 홈페이지</li>
+			<li>네트워크 장애 발생 상황</li>
+		</ul>
+	</li>
+		
+	<li>News
+		<ul>
+			<li>News</li>
+			<li>보도자료</li>
+			<li>알림</li>
+			<li>이벤트</li>
+		</ul>
+	</li>
+		
+	<li>다운로드 구입</li>
+	<li>검색</li>
+</ul>
+</nav>
 
 <div>
 
