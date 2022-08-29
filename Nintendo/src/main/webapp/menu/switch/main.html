@@ -6,85 +6,116 @@
 
 <style type="text/css">
 
-nav {
-	background-color: lightyellow;
-	border:1px solid #000;
-	height: 100px;
+ul.menu {
+	list-style-type: none;
+	
+	padding: 0;
+	margin: 0;
+	
 }
 
-article, section {
-	background-color: lightyellow;
-	border:1px solid #000;
-}
-
-section {
+ul.menu > li {
+	width: 150px;
+	line-height: 50px;
 	float: left;
+	background-color: yellow;
+	border: 1px solid #000;
+	position: relative;
+	text-align: center;
 }
 
-#id {
+
+ul.menu > li > ul {
+	position: absolute;
+	
+	list-style-type: none;
+	
+	padding: 0;
+	margin: 0;
+}
+
+ul.menu > li > ul > li {
+	background-color: red;
+	display: none;
+}
+
+ul.menu > li > ul > li > a {
 	display: block;
 }
 
-.switch {
-	background-color: lightyellow;
-	border:1px solid #000;
-	display: inline-block;
-	height: 500px;
+ul.menu > li:hover > ul > li {
+	display:block;
 }
 
 </style>
 
 </head>
+
 <body>
 
-<nav>메뉴</nav>
+<nav>
+<ul class="menu">
+	<li>닌텐도</li>
+	
+	<li>Nintendo Switch
+		<ul>
+			<li>Nintendo Switch OLED 모델</li>
+			<li>Nintendo Switch</li>
+			<li>Nintendo Switch Lite</li>
+			<li>기능ㆍ특징을 비교</li>
+			<li>주변기기</li>
+			<li>Nintendo Switch Online</li>
+			<li>Nintendo 지킴이 Switch™</li>
+			<li>닌텐도 e숍</li>
+		</ul>
+	</li>
+		
+	<li>닌텐도 3DS
+		<ul>
+			<li>닌텐도 3DS란?</li>
+			<li>New 닌텐도 3DS XL</li>
+			<li>New 닌텐도 2DS XL</li>
+			<li>기타 시리즈</li>
+			<li>닌텐도 e숍</li>
+		</ul>
+	</li>
 
-<section>
-	<article>
-	<section>
-	1
-	</section>
-	<section>
-	1
-	</section>
-	<section>
-	1
-	</section>
-	</article>
-	
-	<article>
-	<div>
-	<img>더즐겁게~
-	</div>
-	
-	<div>
-	<img>마리오루이지사진
-	</div>
-	
-	<div>
-	<h4>| Nintendo Switch Online</h4>
-	<p>
-	</div>
-	</article>
-	
-</section>
+	<li>소프트웨어
+		<ul>
+			<li>Nintendo Switch 소프트웨어</li>
+			<li>닌텐도 3DS 소프트웨어</li>
+			<li>발매 예정 소프트웨어</li>
+			<li>스마트폰용 앱</li>
+		</ul>
+	</li>
+		
+	<li>고객지원
+		<ul>
+			<li>Nintendo Switch 고객지원</li>
+			<li>Nintendo Switch Online 서포트</li>
+			<li>닌텐도 3DS 고객지원</li>
+			<li>고객지원 홈페이지</li>
+			<li>네트워크 장애 발생 상황</li>
+		</ul>
+	</li>
+		
+	<li>News
+		<ul>
+			<li>News</li>
+			<li>보도자료</li>
+			<li>알림</li>
+			<li>이벤트</li>
+		</ul>
+	</li>
+		
+	<li>다운로드 구입</li>
+	<li>검색</li>
+</ul>
+</nav>
 
 <div>
-소프트웨어
-</div>
 
-<footer>
-	<div>
-	이용약관	|	개인정보취급방침 <br>
-	&copy; 2006 Nintendo of Korea Co., Ltd. All Rights Reserved.<br>
-	상호명 : 한국닌텐도주식회사	대표자명 : 미우라 타카히로	사업자등록번호 : 120-87-03578
-	</div>
-	
-	<div>
-	고객지원 문의전화 : 1670-9900 (평일 오전 9시 30분~오후 5시 30분)<br>
-	<h6>※ 토/일/공휴일/회사 정기휴일 및 특별휴일 제외</h6>
-	</div>
-</footer>
+</div>
 
 </body>
 </html>
