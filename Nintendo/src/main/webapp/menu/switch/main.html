@@ -7,6 +7,7 @@
 <style type="text/css">
 
 body {
+	background-color: #e60012;
 	margin: 0;
 	padding: 0;
 }
@@ -35,6 +36,11 @@ ul.menu > li {
 	position: relative;
 	text-align: center;
 	box-sizing: border-box;
+}
+
+ul.menu > li > ul > li:hover {
+	
+	color:#e60012;
 }
 
 
@@ -71,11 +77,17 @@ ul.menu > li:hover > ul > li {
 	overflow: hidden;
 }
 
-section {
-	background-color: orange;
-	height: 500px;
+article > div {
+	background-color: #e60012;
+	padding-top: 300px;
+	float : left;
+	text-align: center;
 }
 
+#article2 {
+	background-color: #e60012;
+	text-align: center;
+}
 </style>
 
 </head>
@@ -84,7 +96,7 @@ section {
 
 <nav>
 <ul class="menu">
-	<li style="background-color:#E41E26">닌텐도</li>
+	<li style="background-color:#e60012">NINTENDO LOGO</li>
 	
 	<li>Nintendo Switch
 		<ul>
@@ -146,11 +158,32 @@ section {
 
 <section>
 	<article>
-	<p>본문1</p>
+	
+	<div>
+	<img src="/Nintendo/menu/switch/img/local-hero__pic_had.png">
+	<p>Nintendo Switch</p>
+	<button>상품 정보</button>
+	</div>
+	
+	<div style="padding:0;">
+	<img src="/Nintendo/menu/switch/img/local-hero__pic_oled.png">
+	<p>Nintendo Switch</p>
+	<p>OLED 모델</p>
+	<button>상품 정보</button>
+	</div>
+	
+	<div>
+	<img src="/Nintendo/menu/switch/img/local-hero__pic_lite.png">
+	<p>Nintendo Switch Lite</p>
+	<button>상품 정보</button>
+	</div>
 	</article>
 	
-	<article>
-	<p>본문2</p>
+	<div class="clearfix">.</div>
+
+	<article id="article2">
+	<button>기능·특징을 비교</button>
+	<button>주변기기</button>
 	</article>
 </section>
 
