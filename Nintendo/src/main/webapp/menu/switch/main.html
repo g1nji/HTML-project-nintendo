@@ -6,22 +6,41 @@
 
 <style type="text/css">
 
+body {
+	background-color: #e60012;
+	margin: 0;
+	padding: 0;
+}
+
+nav {
+	display: flex;
+	justify-content: center;
+}
+
 ul.menu {
+	width: 100%;
 	list-style-type: none;
 	
 	padding: 0;
-	margin: 0;
+	margin: 0 auto;
 	
 }
 
 ul.menu > li {
-	width: 150px;
-	line-height: 50px;
+	width: 14%;
+	line-height: 80px;
 	float: left;
-	background-color: yellow;
-	border: 1px solid #000;
+	border-top: 1px solid #c6c6c6;
+	border-right: 1px solid #c6c6c6;
+	background-color: white;
 	position: relative;
 	text-align: center;
+	box-sizing: border-box;
+}
+
+ul.menu > li > ul > li:hover {
+	
+	color:#e60012;
 }
 
 
@@ -35,7 +54,7 @@ ul.menu > li > ul {
 }
 
 ul.menu > li > ul > li {
-	background-color: red;
+	background-color: #ddd;
 	display: none;
 }
 
@@ -47,6 +66,28 @@ ul.menu > li:hover > ul > li {
 	display:block;
 }
 
+.clearfix {
+	clear:both;
+	
+	/* 컨텐츠 영역 없애기 */
+	width: 0;
+	height: 0;
+	
+	/* 내용물이 컨텐츠영역을 넘었을 때 안보이도록 설정하기 */
+	overflow: hidden;
+}
+
+article > div {
+	background-color: #e60012;
+	padding-top: 300px;
+	float : left;
+	text-align: center;
+}
+
+#article2 {
+	background-color: #e60012;
+	text-align: center;
+}
 </style>
 
 </head>
@@ -55,7 +96,7 @@ ul.menu > li:hover > ul > li {
 
 <nav>
 <ul class="menu">
-	<li>닌텐도</li>
+	<li style="background-color:#e60012">NINTENDO LOGO</li>
 	
 	<li>Nintendo Switch
 		<ul>
@@ -108,14 +149,43 @@ ul.menu > li:hover > ul > li {
 		</ul>
 	</li>
 		
-	<li>다운로드 구입</li>
-	<li>검색</li>
+	<li style="width:10%">다운로드 구입</li>
+	<li style="width:6%; border-right:none;">검색</li>
 </ul>
 </nav>
 
-<div>
+<div class="clearfix">.</div>
 
-</div>
+<section>
+	<article>
+	
+	<div>
+	<img src="/Nintendo/menu/switch/img/local-hero__pic_had.png">
+	<p>Nintendo Switch</p>
+	<button>상품 정보</button>
+	</div>
+	
+	<div style="padding:0;">
+	<img src="/Nintendo/menu/switch/img/local-hero__pic_oled.png">
+	<p>Nintendo Switch</p>
+	<p>OLED 모델</p>
+	<button>상품 정보</button>
+	</div>
+	
+	<div>
+	<img src="/Nintendo/menu/switch/img/local-hero__pic_lite.png">
+	<p>Nintendo Switch Lite</p>
+	<button>상품 정보</button>
+	</div>
+	</article>
+	
+	<div class="clearfix">.</div>
+
+	<article id="article2">
+	<button>기능·특징을 비교</button>
+	<button>주변기기</button>
+	</article>
+</section>
 
 </body>
 </html>
