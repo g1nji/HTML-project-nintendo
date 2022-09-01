@@ -27,7 +27,7 @@ ul.menu {
 }
 
 ul.menu > li {
-	width: 14%;
+	width: 200px;
 	line-height: 80px;
 	float: left;
 	border-top: 1px solid #c6c6c6;
@@ -35,7 +35,11 @@ ul.menu > li {
 	background-color: white;
 	position: relative;
 	text-align: center;
-	box-sizing: border-box;
+	box-sizing: content-box;
+}
+
+ul.menu li:hover {
+	color:#e60012;
 }
 
 ul.menu > li > ul > li:hover {
@@ -56,9 +60,12 @@ ul.menu > li > ul {
 ul.menu > li > ul > li {
 	background-color: #ddd;
 	display: none;
+	padding: 10px 0px;
+	width: 200px;
 }
 
 ul.menu > li > ul > li > a {
+	padding: 20px 5px;
 	display: block;
 }
 
@@ -79,15 +86,43 @@ ul.menu > li:hover > ul > li {
 
 article > div {
 	background-color: #e60012;
-	padding-top: 300px;
-	float : left;
 	text-align: center;
+}
+
+#switch {
+	float:left;
+}
+
+#switch_oled {
+	float:left;
+}
+
+#switch_lite {
+	float:left;
 }
 
 #article2 {
 	background-color: #e60012;
 	text-align: center;
 }
+
+.wbtn {
+	width: 500px;
+	height: 80px;
+	background-color: #e60012;
+	color: #fff;
+	font-size: 15pt;
+	font-weight: bold;
+	border:1px solid #fff;
+	margin: 10px;
+}
+
+.line {
+	margin-top: 50px;
+	background-color: #fff;
+	height: 3px;
+}
+
 </style>
 
 </head>
@@ -150,7 +185,7 @@ article > div {
 	</li>
 		
 	<li style="width:10%">다운로드 구입</li>
-	<li style="width:6%; border-right:none;">검색</li>
+	<li style="width:auto; border-right:none;">검색</li>
 </ul>
 </nav>
 
@@ -159,20 +194,20 @@ article > div {
 <section>
 	<article>
 	
-	<div>
+	<div id="switch">
 	<img src="/Nintendo/menu/switch/img/local-hero__pic_had.png">
 	<p>Nintendo Switch</p>
 	<button>상품 정보</button>
 	</div>
 	
-	<div style="padding:0;">
+	<div id="switch_oled">
 	<img src="/Nintendo/menu/switch/img/local-hero__pic_oled.png">
 	<p>Nintendo Switch</p>
 	<p>OLED 모델</p>
 	<button>상품 정보</button>
 	</div>
 	
-	<div>
+	<div id="switch_lite">
 	<img src="/Nintendo/menu/switch/img/local-hero__pic_lite.png">
 	<p>Nintendo Switch Lite</p>
 	<button>상품 정보</button>
@@ -182,8 +217,20 @@ article > div {
 	<div class="clearfix">.</div>
 
 	<article id="article2">
-	<button>기능·특징을 비교</button>
-	<button>주변기기</button>
+	<button class="wbtn">기능·특징을 비교</button>
+	<button class="wbtn">주변기기</button>
+	</article>
+</section>
+<section>
+	<div class="line"></div>
+	<article>
+		<table>
+			<tr>
+				<th>더 즐겁게</th>
+				<th>이미지</th>
+				<th>닌텐도스위치</th>
+			</tr>
+		</table>
 	</article>
 </section>
 
