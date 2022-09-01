@@ -3,31 +3,189 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+
+<style type="text/css">
+
+body {
+	background-color: #e60012;
+	margin: 0;
+	padding: 0;
+}
+
+nav {
+	display: flex;
+	justify-content: center;
+}
+
+ul.menu {
+	width: 100%;
+	list-style-type: none;
+	
+	padding: 0;
+	margin: 0 auto;
+	
+}
+
+ul.menu > li {
+	width: 14%;
+	line-height: 80px;
+	float: left;
+	border-top: 1px solid #c6c6c6;
+	border-right: 1px solid #c6c6c6;
+	background-color: white;
+	position: relative;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+ul.menu > li > ul > li:hover {
+	
+	color:#e60012;
+}
+
+
+ul.menu > li > ul {
+	position: absolute;
+	
+	list-style-type: none;
+	
+	padding: 0;
+	margin: 0;
+}
+
+ul.menu > li > ul > li {
+	background-color: #ddd;
+	display: none;
+}
+
+ul.menu > li > ul > li > a {
+	display: block;
+}
+
+ul.menu > li:hover > ul > li {
+	display:block;
+}
+
+.clearfix {
+	clear:both;
+	
+	/* 컨텐츠 영역 없애기 */
+	width: 0;
+	height: 0;
+	
+	/* 내용물이 컨텐츠영역을 넘었을 때 안보이도록 설정하기 */
+	overflow: hidden;
+}
+
+article > div {
+	background-color: #e60012;
+	padding-top: 300px;
+	float : left;
+	text-align: center;
+}
+
+#article2 {
+	background-color: #e60012;
+	text-align: center;
+}
+</style>
+
 </head>
+
 <body>
 
-<nav>메뉴</nav>
+<nav>
+<ul class="menu">
+	<li style="background-color:#e60012">NINTENDO LOGO</li>
+	
+	<li>Nintendo Switch
+		<ul>
+			<li>Nintendo Switch OLED 모델</li>
+			<li>Nintendo Switch</li>
+			<li>Nintendo Switch Lite</li>
+			<li>기능ㆍ특징을 비교</li>
+			<li>주변기기</li>
+			<li>Nintendo Switch Online</li>
+			<li>Nintendo 지킴이 Switch™</li>
+			<li>닌텐도 e숍</li>
+		</ul>
+	</li>
+		
+	<li>닌텐도 3DS
+		<ul>
+			<li>닌텐도 3DS란?</li>
+			<li>New 닌텐도 3DS XL</li>
+			<li>New 닌텐도 2DS XL</li>
+			<li>기타 시리즈</li>
+			<li>닌텐도 e숍</li>
+		</ul>
+	</li>
 
-<div>
-스위치설명
-</div>
+	<li>소프트웨어
+		<ul>
+			<li>Nintendo Switch 소프트웨어</li>
+			<li>닌텐도 3DS 소프트웨어</li>
+			<li>발매 예정 소프트웨어</li>
+			<li>스마트폰용 앱</li>
+		</ul>
+	</li>
+		
+	<li>고객지원
+		<ul>
+			<li>Nintendo Switch 고객지원</li>
+			<li>Nintendo Switch Online 서포트</li>
+			<li>닌텐도 3DS 고객지원</li>
+			<li>고객지원 홈페이지</li>
+			<li>네트워크 장애 발생 상황</li>
+		</ul>
+	</li>
+		
+	<li>News
+		<ul>
+			<li>News</li>
+			<li>보도자료</li>
+			<li>알림</li>
+			<li>이벤트</li>
+		</ul>
+	</li>
+		
+	<li style="width:10%">다운로드 구입</li>
+	<li style="width:6%; border-right:none;">검색</li>
+</ul>
+</nav>
 
-<div>
-소프트웨어
-</div>
+<div class="clearfix">.</div>
 
-<footer>
+<section>
+	<article>
+	
 	<div>
-	이용약관	|	개인정보취급방침 <br>
-	&copy; 2006 Nintendo of Korea Co., Ltd. All Rights Reserved.<br>
-	상호명 : 한국닌텐도주식회사	대표자명 : 미우라 타카히로	사업자등록번호 : 120-87-03578
+	<img src="/Nintendo/menu/switch/img/local-hero__pic_had.png">
+	<p>Nintendo Switch</p>
+	<button>상품 정보</button>
+	</div>
+	
+	<div style="padding:0;">
+	<img src="/Nintendo/menu/switch/img/local-hero__pic_oled.png">
+	<p>Nintendo Switch</p>
+	<p>OLED 모델</p>
+	<button>상품 정보</button>
 	</div>
 	
 	<div>
-	고객지원 문의전화 : 1670-9900 (평일 오전 9시 30분~오후 5시 30분)<br>
-	<h6>※ 토/일/공휴일/회사 정기휴일 및 특별휴일 제외</h6>
+	<img src="/Nintendo/menu/switch/img/local-hero__pic_lite.png">
+	<p>Nintendo Switch Lite</p>
+	<button>상품 정보</button>
 	</div>
-</footer>
+	</article>
+	
+	<div class="clearfix">.</div>
+
+	<article id="article2">
+	<button>기능·특징을 비교</button>
+	<button>주변기기</button>
+	</article>
+</section>
 
 </body>
 </html>
