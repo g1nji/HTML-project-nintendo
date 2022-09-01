@@ -6,6 +6,90 @@
 
 <style type="text/css">
 
+header {
+	position: relative;
+	border-bottom: 1px solid #d9d9d9;
+	z-index: 9999;
+}
+
+header h1 {
+    position: relative;
+    width: 15%;
+    background: #e60012;
+    text-align: center;
+    z-index: 9999;
+}
+
+header h1 a {
+	height: 74px;
+	background: url(/image/logo_nintendo_red.gif) no-repeat center center;
+}
+
+header nav {
+	position: absolute;
+	top: 0;
+	left: 15%;
+	width: cals(85% - (75px + 141px));
+	height: 100%
+}
+
+header nav > ul {
+	height: 100%;
+}
+
+header nav > ul > li {
+	float: left;
+	width: 20%;
+	height: 100%;
+}
+
+header nav > ul> li:fist-child {
+	width: 20% - 1px;
+}
+
+header nav > ul > li + li {
+	border-left: 1px solid #d9d9d9;
+}
+
+header nav > ul > li >  a {
+	height: 100%;
+	background: #fff;
+	text-align: center;
+	font-size: 18px;
+	color: #111;
+	line-height: 74px;
+}
+
+header nav > ul > li:hover > a {
+	color: #e60012;
+}
+
+header nav > ul > li > a.on {
+	color: #e60012;
+}
+
+header nav > ul ul {
+	padding: 20px 0;
+	border: 1px solid #d9d9d9;
+	background: #f7f7f7;
+}
+
+
+header nav > ul ul li {
+    padding: 10px 10px 10px 30px;
+    line-height: 1 !important;
+}
+
+header nav > ul ul li a {
+    text-align: left;
+    font-size: 15px;
+    color: #111;
+    line-height: 150%;
+}
+
+header nav > ul ul li a:hover {
+    color: #e60012;
+}
 
 </style>
 
@@ -24,7 +108,7 @@
 	
 	<nav>
 	
-	<ul>
+	<ul class="menu">
 		<li>
 		<a href="">Nintendo Switch</a>
 		<ul>
@@ -82,23 +166,20 @@
 		</li>
 	</ul>
 	</nav>
-
-	<a href="https://store.nintendo.co.kr/" target="_blank">다운로드 구입</a>
-	<a href="#">"검색"</a>
 	
-	<div style="display: block; transform: matrix(1, 0, 0, 1, 0, 0);">
-	<form action="/search.php" method="get">
+	<a href="#" class="btn_gnb is-folded">메뉴 열기/닫기</a>
+    <a href="https://store.nintendo.co.kr/" class="btn_eshop" target="_blank">다운로드 구입</a>
+    <a href="#" class="btn_search">검색</a>
+    <div class="box_search">
+        <form action="/search.php" method="get" id="globalSearchFrm">
 		<span>
-		<input type="text" name="globalSearch" placeholder="키워드를 입력해주세요.">
-		<a href="">검 색</a> 
+			<input type="text" name="globalSearch" value="" placeholder="키워드를 입력해주세요." />
+			<a href="">검 색</a>
 		</span>
-	</form>
-		<a href="">"검색 닫기"</a>
-	</div>
-	
-	
-
+        </form>
+        <a href="#" class="btn_close_searchBox">검색 닫기</a>
+    
+    </div>
 </header>
-
 </body>
 </html>
