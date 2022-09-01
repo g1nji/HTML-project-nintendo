@@ -23,7 +23,14 @@ ul.menu>li {
 	text-align: center;
 }
 
+
+/* 설정을 하면 아래부분까지 전부 빨강으로 변해 우선 주석*/
+/* ul.menu:hover { 
+	color:red; 
+ }	*/ 
+
 ul.menu>li>ul {
+		z-index:6;
 	position: absolute;
 	list-style-type: none;
 	padding: 0;
@@ -32,14 +39,20 @@ ul.menu>li>ul {
 
 ul.menu>li>ul>li {
 /* 	position:absolute; */
-	z-index:6;
+
 /* 	top:500px; */
 	background-color: #9B757B;
 	display: none;
 	width: 200px;
 	height: 80px;
+	text-align: center;
+	
+/* 	position: relative; */
 }
 
+ul.menu>li>ul>li:hover {
+	color:red;
+}
 ul.menu>li>ul>li>a {
 	display: block;
 }
@@ -52,6 +65,8 @@ ul.menu>li:hover>ul>li {
 	background: #07162b;
 /* 	padding-top :168px; */
 	font-family: 'Malgun Gothic','맑은 고딕',sans-serif;
+	width: 1600px;
+
 }
 
  
@@ -71,6 +86,35 @@ ul.menu>li:hover>ul>li {
 	padding-left: 800px;
 	padding-top: 300px;
 }
+
+
+.price::after{
+	content:"생산종료";
+	font-size: 20px;
+	background-color: #5c6163;
+	color: #fff;
+	padding: 7px 20px;
+	margin: 10px;
+	border-radius:30px;
+}
+
+.btn_view{
+	font-size: 16px;
+    line-height: 42px;
+    letter-spacing: -0.075em;
+    text-align: center;
+    border-radius: 3px;
+    background-color: #e60012;
+    color: #fff;
+    display: block;
+	text-decoration: none;
+}
+
+.btn_view span {
+    padding-right: 36px;
+    background: url(/images/renew/3ds/main/btn_bg.png) no-repeat 100% 50%;
+}
+
 
 
 </style>
@@ -178,9 +222,18 @@ ul.menu>li:hover>ul>li {
 			<div class="price">
 				희망소비자 가격 <span>225,000</span> 원
 			</div>
+			
+			<div>
+			<a href ="" class=btn_view>
+			<span>자세히보기</span>
+			</a>
+			</div>
 		</div>
 	</div>
 
+	<div>
+	
+	</div>
 
 </body>
 </html>
