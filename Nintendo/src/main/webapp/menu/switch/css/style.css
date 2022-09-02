@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+body {
+	background-color: #e60012;
+	margin: 0;
+	padding: 0;
+}
+
+nav {
+	display: flex;
+	justify-content: center;
+}
+
+ul.menu {
+	width: 100%;
+	list-style-type: none;
+	
+	padding: 0;
+	margin: 0 auto;
+	
+}
+
+ul.menu > li {
+	width: 13%;
+	line-height: 80px;
+	float: left;
+	border-top: 1px solid #c6c6c6;
+	border-right: 1px solid #c6c6c6;
+	background-color: white;
+	position: relative;
+	text-align: center;
+	box-sizing: content-box;
+}
+
+ul.menu li:hover {
+	color:#e60012;
+}
+
+ul.menu > li > ul > li:hover {
+	
+	color:#e60012;
+}
+
+
+ul.menu > li > ul {
+	position: absolute;
+	
+	list-style-type: none;
+	
+	padding: 0;
+	margin: 0;
+}
+
+ul.menu > li > ul > li {
+	background-color: #ddd;
+	display: none;
+	padding: 10px 0px;
+	width: 200px;
+}
+
+ul.menu > li > ul > li > a {
+	padding: 20px 5px;
+	display: block;
+}
+
+ul.menu > li:hover > ul > li {
+	display:block;
+}
+
+.btn_shop {
+	width: 180px;
+	background-color: #fe7c0a;
+}
+
+.btn_search{
+	width: 90px;
+}
+
+.clearfix {
+	clear:both;
+	
+	/* 컨텐츠 영역 없애기 */
+	width: 0;
+	height: 0;
+	
+	/* 내용물이 컨텐츠영역을 넘었을 때 안보이도록 설정하기 */
+	overflow: hidden;
+}
+
+article > div {
+	background-color: #e60012;
+	text-align: center;
+}
+
+#switch {
+	float:left;
+}
+
+#switch_oled {
+	float:left;
+}
+
+#switch_lite {
+	float:left;
+}
+
+#article2 {
+	background-color: #e60012;
+	text-align: center;
+}
+
+.wbtn {
+	width: 500px;
+	height: 80px;
+	background-color: #e60012;
+	color: #fff;
+	font-size: 15pt;
+	font-weight: bold;
+	border:1px solid #fff;
+	margin: 10px;
+}
+
+.line {
+	margin-top: 50px;
+	background-color: #fff;
+	height: 3px;
+}
+
+footer {
+	padding: 30px;
+	background-color: #f5f5f5;
+	
+	font-size: 14px;
+	line-height: 24px;
+	color: #737373;
+}
