@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style type="text/css">
+
+/* 메인 메뉴 - 1 Depth */
+ul.nav {
+	/* ul태그의 기본 리스트스타일(disc) 제거 */
+	list-style-type: none;
+
+	/* ul태그의 기본 여백 제거 */
+	padding: 0;
+	margin: 0;
+}
+
+/* 메인 메뉴의 항목 */
+ul.nav > li {
+
+	float: left;
+ 	background-color:#fff;
+	font-size:18px;
+/* 	height:100%; */
+/* 	text-align:center; */
+	/* 줄간격을 이용한 높이 조절 (배경색 포함) */
+	line-height: 70px;
+	
+	/* 테두리를 이용한 메뉴 항목 구문 */
+	border: 1px solid gray;
+	position: relative;
+	display: block;
+}
+
+/* 메인 메뉴의 항목 텍스트 */
+ul.nav > li > a {
+
+	/* 글자 색상 */
+	color: black;
+	
+	/* 글자 꾸밈선 제거 (underline 제거) */
+	text-decoration: none;
+	
+	font-size: 20px;	/* 글자 크기 */
+	/* font-weight: bold; */	/* 글자 모양: 굵게 */
+	font-family: 굴림 gulim 돋움 dotum;	/* 글꼴 */
+	
+	/* 내부 여백 */
+	/* 	-> 링크 클릭이 가능한 영역 */
+	padding: 10px 15px;
+	
+	/* 외부 여백 */
+	/* 	-> 링크 클릭이 불가능한 영역 */
+	margin: 0 5px;
+}
+
+/* 메인 메뉴의 항목 텍스트에 마우스를 올렸을 때 */
+ul.nav > li > a:hover {
+	color: red;
+}
+
+/* -------------------------------------------------- */
+
+/* 서브메뉴 */
+ul.nav > li > ul {
+	
+	/* HTML계층구조에서 빼내는 설정 */
+	/* 	-> 부모요소가 배경색을 같이 씌우지 않는다 */
+	position: absolute;
+	
+	/* ul태그의 기본 리스트 스타일(circle) 제거 */
+	list-style-type: none;
+	
+	/* ul태그의 기본 여백 제거 */
+	padding: 0;
+	margin: 0;
+	
+	/* 서브 메뉴 영역의 너비 */
+	width: 200px;
+	
+	/* 서브 메뉴의 위치 설정 */
+	left: 10px;
+}
+
+/* 서브 메뉴의 항목 */
+ul.nav > li > ul > li {
+	
+	/* 배경색 지정 */
+	background-color: white;
+
+	/* 내부 여백 - 항목의 크기 설정 */
+/* 	padding: 10px; */
+
+	/* 왼쪽 내부 여백 - 들여쓰기 효과 */
+	padding-left: 20px;
+
+	/* 평소에 안보이도록 숨기기 */
+/* 	display: none; */
+
+	/* 평소에 안보이도록 숨기기 */
+	height: 0;	/* 컨텐츠 영역의 높이 제거 */
+	font-size: 0;	/* 글자 크기 제거 */
+	line-height: 0;	/* 줄간격 제거 */
+
+}
+
+/* 메인 메뉴 항목에 마우스를 올렸을 때
+	서브 메뉴의 항목이 보이도록 설정하기 */
+ul.nav > li:hover > ul > li {
+	
+	height: 40px;	/* 보여질 컨텐츠 영역의 높이 지정 */
+	font-size: 20px;	/* 보여질 글자 크기 지정 */
+	line-height: 40px;	/* 보여질 줄간격 높이 지정 */
+	
+}
+
+/* 서브 메뉴의 항목 텍스트 */
+ul.nav > li > ul > li > a {
+	
+	/* 배경색 지정 */
+	background: #ccc;
+
+	/* 글자색 지정 */
+	color: #333;
+
+	/* 글자 꾸밈선 제거 (underline 제거) */
+	text-decoration: none;
+
+	/* 부모 <li>태그 크기만큼 영역을 차지하도록 설정 */
+	display: block;
+}
+
+/* 서브 메뉴의 항목 텍스트에 마우스가 올라갔을 때 */
+ul.nav > li > ul > li > a:hover {
+	/* 글자색 지정 */
+	color: #c00;
+	
+	/* 배경색 지정 */
+	background-color: gray;
+}
+
+</style>
+
+</head>
+<body>
+<hr>
+
+<ul class="nav">
+	<li><a href="">Nintendo</a></li>
+
+	<li>
+		<a href="">Nintendo Switch</a>
+		<ul>
+			<li><a href="">Nintendo Switch OLED 모델</a></li>
+			<li><a href="">Nintendo Switch</a></li>
+			<li><a href="">Nintendo Switch Lite</a></li>
+			<li><a href="">기능ㆍ특징을 비교</a></li>
+			<li><a href="">주변기기</a></li>
+			<li><a href="">Nintendo Switch Online</a></li>
+			<li><a href="">Nintendo 지킴이 Switch™</a></li>
+			<li><a href="">닌텐도 e숍</a></li>
+		</ul>
+	</li>
+	
+	<li>
+		<a href="">소프트웨어</a>
+		<ul>
+			<li><a href="">Nintendo Switch 소프트웨어</a></li>
+			<li><a href="">닌텐도 3DS 소프트웨어</a></li>
+			<li><a href="">발매 예정 소프트웨어</a></li>
+			<li><a href="">스마트폰용 앱</a></li>
+		</ul>
+	</li>
+	
+	<li>
+		<a href="">캐릭터</a>
+		<ul>
+			<li><a href="">스플래툰 베이스 홈페이지</a></li>
+			<li><a href="">별의 커비 공식 홈페이지</a></li>
+		</ul>
+	</li>
+	
+	<li>
+		<a href="">고객지원</a>
+		<ul>
+			<li><a href="">Nintendo Switch 고객지원</a></li>
+			<li><a href="">Nintendo Switch Online 서포트</a></li>
+			<li><a href="">닌텐도 3DS 고객지원</a></li>
+			<li><a href="">고객지원 홈페이지</a></li>
+			<li><a href="">네트워크 장애 발생 상황</a></li>
+		</ul>
+	</li>
+	
+	<li>
+		<a href="">소프트웨어</a>
+		<ul>
+			<li><a href="">News</a></li>
+			<li><a href="">보도자료</a></li>
+			<li><a href="">알림</a></li>
+			<li><a href="">이벤트</a></li>
+		</ul>
+	</li>
+	
+	<li><a href=""><img src="image/buy.gif" width=100px;></a></li>
+	
+	<li><a href="">돋보기</a></li>
+	
+</ul>
+
+</body>
+</html>
