@@ -6,6 +6,177 @@
 
 <style type="text/css">
 
+* {
+	text-decoration: none;
+}
+
+header {
+	position: relative;
+	border-bottom: 1px solid #d9d9d9;
+	z-index: 9999;
+}
+
+header h1 {
+    position: relative;
+    width: 230px;;
+    background: #e60012;
+    text-align: center;
+    z-index: 9999;
+    margin-top: 0px;
+}
+
+header h1 a {
+	display: block;
+	height: 74px;
+	background: url(/Nintendo/image/logo_nintendo_red.gif) no-repeat center center;
+	text-decoration: none;
+	text-indent: -99999px;
+}
+
+header nav {
+	position: absolute;
+	top: -15px;
+	left: 15%;
+	width: 1200px;
+	height: 90px;
+	
+}
+
+header nav > ul {
+	height: 90px;
+	list-style-type: none;
+	padding-left: 0px;
+	
+}
+
+header nav > ul > li {
+	float: left;
+	width: 220px;
+	height: 90px;
+	text-align: center;
+	
+}
+
+header nav > ul > li> ul > li {
+	height: 50px;
+}
+
+header nav > ul > li> ul {
+	height: 0px;
+	font-size: 0px;
+	line-height: 0px;
+}
+
+header nav > ul > li:hover > ul {
+	font-size: 15px;
+	line-height: 50px;
+}
+
+
+header nav > ul > li >  a {
+	background: #fff;
+	font-size: 18px;
+	color: #111;
+	line-height: 70px;
+	text-decoration: none;
+	width: 220px;
+	height: 80px;
+	text-align: center;
+}
+
+header nav > ul li ul {
+	padding: 0px 0;
+	border: 1px solid #d9d9d9;
+	background: #f7f7f7;
+	list-style-type: none;
+}
+
+.btn_search {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 75px;
+    height: 100%;
+    border-left: 1px solid #d9d9d9;
+    background: #fff;
+    font-size: 0;
+    text-indent: -9999px;
+    z-index: 9999;
+    }
+
+.btn_eshop {
+    position: absolute;
+    top: 0;
+    right: 75px;
+    width: 141px;
+    height: 100%;
+    border-left: 1px solid #d9d9d9;
+    background: #fe7c0a url(/Nintendo/image/btn_head_eshop.gif) no-repeat center center;
+    text-indent: 0;
+    font-size: 0;
+    text-indent: -9999px;
+    z-index: 9999;
+    }
+
+.box_search {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 100px 0 30px;
+    border: 1px solid #d9d9d9;
+    background: #f7f7f7;
+    text-align: center;
+    }
+
+.box_search span {
+    display: block;
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    }
+
+.box_search span a {
+    float: left;
+    width: 98px;
+    height: 45px;
+    background: #e60012;
+    vertical-align: middle;
+    color: #fff;
+    line-height: 45px;
+    }
+
+.box_search span input {
+    float: left;
+    width: calc(100% - 98px);
+    height: 45px;
+    padding: 0 15px;
+    border: 1px solid #858585;
+    border-right: 0;
+    vertical-align: middle;
+    font-size: 14px;
+    color: #6a6a6a;
+    }
+
+.box_search .btn_close_searchBox {
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 15px;
+    color: #333;
+    }
+
+.box_search .btn_close_searchBox:before {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-right: 10px;
+    background: url(/images/renew/common/ico_close_searchBox.gif) no-repeat top left;
+    vertical-align: middle;
+    }
+
+
 
 </style>
 
@@ -24,11 +195,11 @@
 	
 	<nav>
 	
-	<ul>
+	<ul class="menu">
 		<li>
 		<a href="">Nintendo Switch</a>
 		<ul>
-			<li><a href="">Nintendo Switch OLED 모델</a>Nintendo Switch OLED 모델</li>
+			<li><a href="">Nintendo Switch OLED 모델</a></li>
 			<li><a href="">Nintendo Switch</a></li>
 			<li><a href="">Nintendo Switch Lite</a></li>
 			<li><a href="">기능·특징을 비교</a></li>
@@ -82,23 +253,20 @@
 		</li>
 	</ul>
 	</nav>
-
-	<a href="https://store.nintendo.co.kr/" target="_blank">다운로드 구입</a>
-	<a href="#">"검색"</a>
 	
-	<div style="display: block; transform: matrix(1, 0, 0, 1, 0, 0);">
-	<form action="/search.php" method="get">
+	<a href="#" class="btn_gnb is-folded">메뉴 열기/닫기</a>
+    <a href="https://store.nintendo.co.kr/" class="btn_eshop" target="_blank">다운로드 구입</a>
+    <a href="#" class="btn_search">검색</a>
+    <div class="box_search">
+        <form action="/search.php" method="get" id="globalSearchFrm">
 		<span>
-		<input type="text" name="globalSearch" placeholder="키워드를 입력해주세요.">
-		<a href="">검 색</a> 
+			<input type="text" name="globalSearch" value="" placeholder="키워드를 입력해주세요." />
+			<a href="">검 색</a>
 		</span>
-	</form>
-		<a href="">"검색 닫기"</a>
-	</div>
-	
-	
-
+        </form>
+        <a href="#" class="btn_close_searchBox">검색 닫기</a>
+    
+    </div>
 </header>
-
 </body>
 </html>
