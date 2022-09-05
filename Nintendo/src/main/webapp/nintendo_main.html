@@ -22,7 +22,7 @@ header h1 {
     background: #e60012;
     text-align: center;
     z-index: 9999;
-    margin-top: 0px;
+    margin: 0px;
 }
 
 header h1 a {
@@ -92,17 +92,30 @@ header nav > ul li ul {
 }
 
 .btn_search {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 75px;
+	height:100%;
+	border-left: 1px solid #d9d9d9;
+	background: #fff;
+	font-size: 0;
+	text-indent: -9999px;
+	z-index: 9999;
+}
+
+.btn_search:before {
+    content: "";
+    display: block;
     position: absolute;
-    top: 0;
-    right: 0;
-    width: 75px;
-    height: 100%;
-    border-left: 1px solid #d9d9d9;
-    background: #fff;
-    font-size: 0;
-    text-indent: -9999px;
-    z-index: 9999;
-    }
+    top: 50%;
+    left: 50%;
+    width: 27px;
+    height: 27px;
+    margin: -13px 0 0 -13px;
+    background: url(/Nintendo/image/search.png) no-repeat left top;
+    text-indent: 0;
+}
 
 .btn_eshop {
     position: absolute;
@@ -116,7 +129,7 @@ header nav > ul li ul {
     font-size: 0;
     text-indent: -9999px;
     z-index: 9999;
-    }
+}
 
 .box_search {
     display: none;
@@ -128,61 +141,9 @@ header nav > ul li ul {
     border: 1px solid #d9d9d9;
     background: #f7f7f7;
     text-align: center;
-    }
-
-.box_search span {
-    display: block;
-    width: 1200px;
-    margin: 0 auto;
-    overflow: hidden;
-    }
-
-.box_search span a {
-    float: left;
-    width: 98px;
-    height: 45px;
-    background: #e60012;
-    vertical-align: middle;
-    color: #fff;
-    line-height: 45px;
-    }
-
-.box_search span input {
-    float: left;
-    width: calc(100% - 98px);
-    height: 45px;
-    padding: 0 15px;
-    border: 1px solid #858585;
-    border-right: 0;
-    vertical-align: middle;
-    font-size: 14px;
-    color: #6a6a6a;
-    }
-
-.box_search .btn_close_searchBox {
-    display: inline-block;
-    margin-top: 30px;
-    font-size: 15px;
-    color: #333;
-    }
-
-.box_search .btn_close_searchBox:before {
-    content: "";
-    display: inline-block;
-    width: 14px;
-    height: 14px;
-    margin-right: 10px;
-    background: url(/images/renew/common/ico_close_searchBox.gif) no-repeat top left;
-    vertical-align: middle;
-    }
-
-
+}
 
 </style>
-
-
-
-
 
 </head>
 <body>
@@ -254,7 +215,7 @@ header nav > ul li ul {
 	</ul>
 	</nav>
 	
-	<a href="#" class="btn_gnb is-folded">메뉴 열기/닫기</a>
+<!-- 	<a href="#" class="btn_gnb is-folded">메뉴 열기/닫기</a> -->
     <a href="https://store.nintendo.co.kr/" class="btn_eshop" target="_blank">다운로드 구입</a>
     <a href="#" class="btn_search">검색</a>
     <div class="box_search">
