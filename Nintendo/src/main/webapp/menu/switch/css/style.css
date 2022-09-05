@@ -17,12 +17,11 @@ ul.menu {
 	
 	padding: 0;
 	margin: 0 auto;
-	
 }
 
 ul.menu > li {
-	width: 13%;
-	line-height: 80px;
+	width: 16.6%;
+	line-height: 70px;
 	float: left;
 	border-top: 1px solid #c6c6c6;
 	border-right: 1px solid #c6c6c6;
@@ -68,7 +67,7 @@ ul.menu > li:hover > ul > li {
 }
 
 .btn_shop {
-	width: 180px;
+	width: 150px;
 	background-color: #fe7c0a;
 }
 
