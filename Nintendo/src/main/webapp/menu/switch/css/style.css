@@ -1,14 +1,24 @@
 @charset "UTF-8";
 
 body {
-	background-color: #e60012;
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
+	border: 0;
 }
 
 nav {
 	display: flex;
 	justify-content: center;
+}
+
+#logo {
+	width: 20%;
+	height: 35px;
+	margin: 0;
+	padding-top: 25px;
+	padding-bottom: 15px;
+	text-align: center;	
+	background-color: #e60012;
 }
 
 ul.menu {
@@ -20,18 +30,18 @@ ul.menu {
 }
 
 ul.menu > li {
-	width: 16.6%;
-	line-height: 70px;
+	width: 20%;
+	line-height: 75px;
 	float: left;
-	border-top: 1px solid #c6c6c6;
-	border-right: 1px solid #c6c6c6;
+	border-right: 1px solid #d9d9d9;
 	background-color: white;
 	position: relative;
 	text-align: center;
-	box-sizing: content-box;
+	font-size: 18px;
+	box-sizing: border-box;
 }
 
-ul.menu li:hover {
+ul.menu > li:hover {
 	color:#e60012;
 }
 
@@ -43,36 +53,49 @@ ul.menu > li > ul > li:hover {
 
 ul.menu > li > ul {
 	position: absolute;
-	
+	display: none;
+	border: 1px solid #d9d9d9;
 	list-style-type: none;
-	
-	padding: 0;
-	margin: 0;
+	width: 100%;
+	padding: 30px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	background-color: #f7f7f7;
 }
 
 ul.menu > li > ul > li {
-	background-color: #ddd;
-	display: none;
-	padding: 10px 0px;
-	width: 200px;
+	padding: 10px 0;
+	width: 100%;
+	box-sizing: border-box;
 }
 
 ul.menu > li > ul > li > a {
-	padding: 20px 5px;
+	font-size: 15px;
+	text-align: left;
+	line-height: 150%;
 	display: block;
 }
 
-ul.menu > li:hover > ul > li {
+ul.menu > li:hover > ul {
 	display:block;
+	color: #111;
 }
 
 .btn_shop {
 	width: 150px;
+	height: 75px;
 	background-color: #fe7c0a;
+	border-right: 1px solid #d9d9d9;
+	font-size: 0;
+	margin: auto 0;
+	text-align: center;
 }
 
 .btn_search{
-	width: 90px;
+	width: 100px;
+	margin: auto 0;
+	text-align: center;
+	font-size: 0;
 }
 
 .clearfix {
