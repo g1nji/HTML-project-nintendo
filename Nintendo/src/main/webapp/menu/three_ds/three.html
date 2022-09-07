@@ -7,14 +7,47 @@
 
 /* li{width:200px; */
 /* 	height:80px;} */
+
+.main_3ds h2 {
+    font-size: 32px;
+    line-height: 50px;
+    letter-spacing: -0.075em;
+    font-weight: normal;
+    text-align: center;
+}
+
+
+dl, ul, ol, menu, li {
+    list-style: none;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+li {
+    text-align: -webkit-match-parent;
+}
+
+
+/*  { */
+/* 	background-image: url(/Nintendo/menu/three_ds/image/section02_bg.png) */
+/* } */
+
 ul.menu {
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
+	
 }
 
+
 ul.menu>li {
-	width: 229px;
+	box-sizing: border-box;
+    width: 12.5%;
+    
+/* 	width: 207px; */
+/* 	width: 100%; 	 */
 	height: 80px;
 	float: left;
 	background-color: white;
@@ -44,7 +77,7 @@ ul.menu>li>ul>li {
 /* 	top:500px; */
 	background-color: #9B757B;
 	display: none;
-	width: 229px;
+	width: 207px;
 	height: 80px;
 	text-align: center;
 	
@@ -123,16 +156,103 @@ ul.menu>li:hover>ul>li {
 }
 
 
+#mario{
+position: relative;
+left:500px;
+font-size:35px;
+}
+
+/* #game200{ */
+/* position: relative; */
+/* left:556px;  */
+/* font-size:35px; */
+/* } */
+
+
+
+.btn_view2 {
+	position: relative;
+	left:720px; 
+    line-height: 42px;
+    letter-spacing: -0.075em;
+    text-align: center;
+    border-radius: 3px;
+    background-color: #e60012;
+    color: #fff;
+    display: block;
+	text-decoration: none;
+	width: 200px;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 75px;
+    padding-left: 15px;
+}
+
+.btn_view2 span {
+    padding-right: 36px;
+    background: url(/images/renew/3ds/main/btn_bg.png) no-repeat 100% 50%;
+}
+
+
+#chara{
+max-width:100%;
+position: relative;
+left:500px;
+
+}
+
+
+
+ #section{ 
+ position: relative; 
+ max-width: 100%; 
+ } 
+
+
+#section02{
+	background-image: url(Nintendo/menu/three_ds/image/section02_bg.png;)
+}
+
+#game_font{
+position: relative;
+text-align:center;
+font-size:35px;
+}
+
+/* .main h2{ */
+/* position: relative; */
+/* text-align:center; */
+/* font-size:35px; */
+/* } */
+
+
+.main_3ds .feat_list .feat {
+    margin: 0 auto 15px;
+    padding-top: 67px;
+    width: 117px;
+    height: 117px;
+    display: block;
+    text-align: center;
+    color: #fff;
+    background: #e60012 ;
+    border-radius: 50%;
+}
+
+.main_3ds .feat_list li {
+    float: left;
+    padding-top: 10px;
+    width: 25%;
+    height: 244px;
+
+}
 
 </style>
-
-
 
 
 <title>닌텐도 3DS</title>
 </head>
 <body>
-
+<section class="contents main_3ds">
 	<div>
 
 
@@ -239,9 +359,89 @@ ul.menu>li:hover>ul>li {
 		</div>
 	</div>
 <!-- ---------------------------------------------------------------------------------------------- -->
-	<div>
-	
-	</div>
+	<div
+		style="background-image: url(Nintendo/menu/three_ds/image/section02_bg.png);">
+		<h2 id="game_font">
+			<br> <strong > <span>200여가지의 다양한
+					게임을</span> 즐길 수 있습니다
+			</strong> <a href="" class=btn_view2> <span>닌텐도 3DS 소프트웨어 ▶ </span>
+			</a>
+		</h2>
+		<!-- 마리오 -->
+		<div>
+			<img alt="mario" src="/Nintendo/menu/three_ds/image/mario.png"
+				width="500" height="400" id="mario">
+			<!-- 버섯	 -->
+			<img alt="chara" src="/Nintendo/menu/three_ds/image/chara03.png"
+				width="" height="" id="chara">
 
+		</div>
+
+	</div>
+	
+<!-- -------------------------------------------------------------------------------------------- -->	
+	
+	<div class="section03">
+		<div>
+			<h2 id="game_font">
+			<span> 닌텐도 3DS의 통신기능을 통해</span>
+			더 넓어진 게임 세계를
+			<br>
+			<span>친구와 가족, 연인과 함께</span>
+			<strong>더 재미있고, 더 즐겁게.</strong>
+			</h2>
+		</div>
+
+		<ul class="feat_list" style="">
+
+			<li>
+			<span class="feat feat01">로컬 통신</span>
+				<p class="txt">
+				대전 / 협력 플레이를 하거나
+				<br>
+				데이터를 교환하세요!
+				</p>
+			</li>
+
+			<li>
+			<span class="feat feat02">인터넷 통신</span>
+				<p class="txt">
+				인터넷에 연결하여
+				<br>
+				다른 유저와 게임을 즐기세요!
+				</p>
+			</li>
+
+			<li>
+			<span class="feat feat03">엇갈림 통신</span>
+				<p class="txt">
+				닌텐도 3DS시리즈 본체를 가진 사람끼리
+				<br>
+				엇갈려 지나칠 때 본체끼리 통신을 하며
+				<br>
+				다양한 게임정보를 교환할 수 있습니다
+				</p>
+			</li>
+
+			<li>
+			<span class="feat feat04">어느새 통신</span>
+				<p class="txt">
+				인터넷에 연결되어 있다면
+				<br>
+				무료 소프트웨어와 게임 추가 데이터,
+				<br>
+				새로운 소식 등 다양한 정보가
+				<br>
+				어느새 내 본체에 들어와 있습니다
+				</p>
+			</li>
+
+			
+		</ul>
+	</div>
+	
+	
+
+</section>
 </body>
 </html>
