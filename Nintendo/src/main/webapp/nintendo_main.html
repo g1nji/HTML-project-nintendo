@@ -12,68 +12,27 @@ $(document).ready(function(){
 	var $slider_list = $("#slider li")
 	console.log( $slider_list )
 	
-	//모든 이미지를 안보이도록 오른쪽에 배치
-// 	$slider_list.css("left", "600px")
 	$slider_list.css("left", $("#sliderbox").css("width"))
-	
-	//-----------------------------------------------------------------------
-	
-	//새로고침했을 때 보여질 첫번째 이미지 설정
 	$slider_list.eq(0).css("left", 0)
-	
-	//-----------------------------------------------------------------------
-	
-	//#sliderbox에 클릭 이벤트를 발생시키는 함수
 	var sliderClick = function() {
 		$("#sliderbox").click()
 	}
-	
-	//3초마다 #sliderbox에 클릭 이벤트 발생시키기
-	var tid = setInterval(sliderClick, 3000)
-	
-	//-----------------------------------------------------------------------
-
-	//#sliderbox를 클릭할 때마다 이미지 교체하기
-	
-	//현재 보여지는 슬라이드의 인덱스
+	var tid = setInterval(sliderClick, 5000)
 	var curSlide = 0;
-	
-	//3초마다 익명함수 실행
 	$("#sliderbox").click(function(){
-		
-		//tid를 가진 타이머 객체를 종료시킨다
 		clearInterval( tid )
-		
-		//3초마다 클릭이벤트 발생 시키기
 		tid = setInterval( sliderClick, 5000);
-		
-		//	-> 마우스를 클릭할 때마다 타이머의 시간을 3초로 갱신한다
-		
-		//-------------------------------------------------------------------
-		
-		//다음에 보여지는 슬라이드의 인덱스
 		var nextSlide = curSlide + 1;
 		nextSlide %= $slider_list.length;
-		
-		
 		console.log( curSlide, ":", nextSlide )
-		
-// 		$slider_list.eq( curSlide ).css("left", $("#sliderbox").css("width") )
-// 		$slider_list.eq( nextSlide ).css("left", 0)
-		
 		$slider_list.eq( curSlide ).animate({ "left": "-="+$("#sliderbox").css("width") })
-		
 		$slider_list.eq( nextSlide ).css("left", $("#sliderbox").css("width"))
-		
 		$slider_list.eq( nextSlide ).animate({ "left": "-="+$("#sliderbox").css("width") })
-		
-		//증가식
 		curSlide++;
 		curSlide %= $slider_list.length;
 	})
 	
 })
-
 
 </script>
 
@@ -249,6 +208,10 @@ header nav > il > li:hover > ul li a {
 	height: 400px;
 }
 
+div.cntbanner {
+	text-align: center;
+}
+
 </style>
 
 </head>
@@ -348,12 +311,12 @@ header nav > il > li:hover > ul li a {
 	<li><img src="/Nintendo/image/banner5.jpg"></li>
 	<li><img src="/Nintendo/image/banner6.jpg"></li>
 	<li><img src="/Nintendo/image/banner7.jpg"></li>
-	<li><img src="/Nintendo/image/banner8.jpg"></li>
+	<li><img src="/Nintendo/image/banner8.png"></li>
 </ul>
 </div>
 
 <div class="cntbanner">
-	<span></span>
+	<span>1~8</span>
 </div>
 
 
