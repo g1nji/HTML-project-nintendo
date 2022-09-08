@@ -17,6 +17,140 @@ table{
 	font-weight:bold;
 }
 
+ul.nav {
+	/* ul태그의 기본 리스트스타일(disc) 제거 */
+	list-style-type: none;
+
+	/* ul태그의 기본 여백 제거 */
+	padding: 0;
+	margin: 0;
+}
+
+/* 메인 메뉴의 항목 */
+ul.nav > li {
+
+	float: left;
+ 	background-color:#fff;
+	font-size:18px;
+ 	height:100%; 
+	text-align:center;
+ 	margin:-8px; 
+	line-height: 70px;
+	border: 1px solid gray;
+	position: relative;
+	display: block;
+}
+
+/* 메인 메뉴의 항목 텍스트 */
+ul.nav > li > a {
+
+	/* 글자 색상 */
+	color: black;
+	
+	/* 글자 꾸밈선 제거 (underline 제거) */
+	text-decoration: none;
+	
+	font-size: 20px;	/* 글자 크기 */
+	/* font-weight: bold; */	/* 글자 모양: 굵게 */
+	font-family: 굴림 gulim 돋움 dotum;	/* 글꼴 */
+	
+	/* 내부 여백 */
+	/* 	-> 링크 클릭이 가능한 영역 */
+/* 	padding: 10px 15px; */
+	
+	/* 외부 여백 */
+	/* 	-> 링크 클릭이 불가능한 영역 */
+	margin: 0 5px;
+}
+
+/* 메인 메뉴의 항목 텍스트에 마우스를 올렸을 때 */
+ul.nav > li > a:hover {
+	color: red;
+}
+
+/* -------------------------------------------------- */
+
+/* 서브메뉴 */
+ul.nav > li > ul {
+	
+	/* HTML계층구조에서 빼내는 설정 */
+	/* 	-> 부모요소가 배경색을 같이 씌우지 않는다 */
+	position: absolute;
+	
+	/* ul태그의 기본 리스트 스타일(circle) 제거 */
+	list-style-type: none;
+	
+	/* ul태그의 기본 여백 제거 */
+	padding: 0;
+	margin: 0;
+	
+	/* 서브 메뉴 영역의 너비 */
+	width: 200px;
+	
+	border:1px solid rgb(230, 230, 230);
+	
+	/* 서브 메뉴의 위치 설정 */
+/* 	left: 10px; */
+}
+
+/* 서브 메뉴의 항목 */
+ul.nav > li > ul > li {
+	
+	/* 배경색 지정 */
+	background-color: white;
+
+	/* 내부 여백 - 항목의 크기*/
+	/* 	padding: 10px; */
+
+	/* 왼쪽 내부 여백 - 들여쓰기 효과 */
+	/* padding-left: 20px; */
+
+	/* 평소에 안보이도록 숨기기 */
+/* 	display: none; */
+
+	/* 평소에 안보이도록 숨기기 */
+	height: 0;	/* 컨텐츠 영역의 높이 제거 */
+	font-size: 0;	/* 글자 크기 제거 */
+	line-height: 10px;	/* 줄간격 제거 */
+}
+
+/* 메인 메뉴 항목에 마우스를 올렸을 때
+	서브 메뉴의 항목이 보이도록 설정하기 */
+ul.nav > li:hover > ul > li {
+	
+	height: 50px;	/* 보여질 컨텐츠 영역의 높이 지정 */
+	font-size: 12px;	/* 보여질 글자 크기 지정 */
+	line-height: 50px;	/* 보여질 줄간격 높이 지정 */
+	
+}
+
+/* 서브 메뉴의 항목 텍스트 */
+ul.nav > li > ul > li > a {
+	
+	/* 배경색 지정 */
+/* 	background-color: rgb(233, 233, 233); */
+
+	/* 글자색 지정 */
+	color: #333;
+
+	/* 글자 꾸밈선 제거 (underline 제거) */
+	text-decoration: none;
+
+	/* 부모 <li>태그 크기만큼 영역을 차지하도록 설정 */
+/* 	display: block; */
+}
+
+/* 서브 메뉴의 항목 텍스트에 마우스가 올라갔을 때 */
+ul.nav > li > ul > li > a:hover {
+	/* 글자색 지정 */
+	color: #c00;
+	
+	/* 배경색 지정 */
+/* 	background-color: rgb(233, 233, 233); */
+}
+.buy{
+padding:0;
+}
 
 </style>
 
@@ -27,12 +161,11 @@ table{
 <body>
 
 <div>
+<hr>
+<ul class="nav">
+	<li style="background-color: #c00; width:215px"><img src="image/logo.gif"width=130px;></li>
 
-<nav>
-<ul class="menu">
-	<li><img src="image/logo.gif";></li>
-
-	<li>Nintendo Switch
+	<li style="width:215px;">Nintendo Switch
 		<ul>
 			<li>Nintendo Switch OLED 모델</li>
 			<li>Nintendo Switch</li>
@@ -45,7 +178,7 @@ table{
 		</ul>
 	</li>
 
-	<li>닌텐도 3DS
+	<li style="width:215px;">닌텐도 3DS
 		<ul>
 			<li>닌텐도 3DS란?</li>
 			<li>New 닌텐도 3DS XL</li>
@@ -55,7 +188,7 @@ table{
 		</ul>
 	</li>
 
-	<li style font-color="red";>소프트웨어
+	<li style="width:215px; font-color:red;">소프트웨어
 		<ul>
 			<li>Nintendo Switch 소프트웨어</li>
 			<li >닌텐도 3DS 소프트웨어</li>
@@ -64,7 +197,7 @@ table{
 		</ul>
 	</li>
 
-	<li>고객지원
+	<li style="width:215px;">고객지원
 		<ul>
 			<li>Nintendo Switch 고객지원</li>
 			<li>Nintendo Switch Online 서포트</li>
@@ -74,7 +207,7 @@ table{
 		</ul>
 	</li>
 
-	<li>News
+	<li style="width:215px;">News
 		<ul>
 			<li>News</li>
 			<li>보도자료</li>
@@ -82,8 +215,8 @@ table{
 			<li>이벤트</li>
 		</ul>
 	</li>
-	<li><img src="image/buy.gif" width=100px;></li>
-	<li></li>
+	<li style="padding:0;"><img src="image/buy.gif" width=150px;height:50px;></li>
+	<li style="width:100px;"></li>
 	
 </ul>
 </nav>
