@@ -71,6 +71,7 @@ ul.menu > li > ul > li {
 
 ul.menu > li > ul > li > a {
 	font-size: 15px;
+	letter-spacing: -1px;
 	text-align: left;
 	line-height: 150%;
 	display: block;
@@ -146,6 +147,11 @@ article > div {
 	margin-top: 50px;
 	background-color: #fff;
 	height: 3px;
+}
+
+#article3 > div {
+	height: 100px;
+	float: left;
 }
 
 footer {
