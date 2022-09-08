@@ -5,7 +5,9 @@
 
 <style type="text/css">
 
-h1{
+
+
+h1, h3{
 	padding-left:150px;
 }
 
@@ -15,6 +17,30 @@ table{
 
 .tr3{
 	font-weight:bold;
+}
+
+.eshop {
+    position: absolute;
+    padding:0;
+    top: 0;
+    right: 0;
+    width: 141px;
+    height: 100%;
+    border-left: 1px solid #d9d9d9;
+    font-size: 0;
+
+}
+.search {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left:15px;
+    width: 75px;
+    height: 100%;
+    border-left: 1px solid #d9d9d9;
+    background: #fff;
+    font-size: 10px;
+
 }
 
 ul.nav {
@@ -36,7 +62,7 @@ ul.nav > li {
 	text-align:center;
  	margin:-8px; 
 	line-height: 70px;
-	border: 1px solid gray;
+	border: 1px solid #d9d9d9;
 	position: relative;
 	display: block;
 }
@@ -161,9 +187,9 @@ padding:0;
 <body>
 
 <div>
-<hr>
+
 <ul class="nav">
-	<li style="background-color: #c00; width:215px"><img src="image/logo.gif"width=130px;></li>
+	<li style="background-color: #e60012; width:215px;"><img src="image/logo.gif"width=130px;></li>
 
 	<li style="width:215px;">Nintendo Switch
 		<ul>
@@ -188,7 +214,7 @@ padding:0;
 		</ul>
 	</li>
 
-	<li style="width:215px; font-color:red;">소프트웨어
+	<li style="width:215px;">소프트웨어
 		<ul>
 			<li>Nintendo Switch 소프트웨어</li>
 			<li >닌텐도 3DS 소프트웨어</li>
@@ -215,12 +241,18 @@ padding:0;
 			<li>이벤트</li>
 		</ul>
 	</li>
-	<li style="padding:0;"><img src="image/buy.gif" width=150px;height:50px;></li>
-	<li style="width:100px;"></li>
+	<li class="eshop"><img src="image/buy.gif"></li>
+	<li class="search">검색</li>
 	
 </ul>
-</nav>
-	
+</div>
+
+<br>
+
+<div>
+<br><br>
+	<h1>Nintendo Switch 소프트웨어</h1>
+<br>
 </div>
 
 <div style="text-align:center;">
@@ -239,9 +271,9 @@ padding:0;
 
 <br>
 
-<h2 class="main_h2">"최신소프트웨어"
+<h3 class="main_h3">"최신소프트웨어"
 <span class="side">New title</span>
-</h2>
+</h3>
 
 <div>
 <table style=margin:auto;>
