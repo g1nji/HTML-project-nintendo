@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style type="text/css">
+
+body{
+    -webkit-text-size-adjust: none;
+    line-height: 1;
+    word-break: keep-all;
+    word-wrap: break-word;
+    overflow-x: hidden;
+}
+
+html {
+    font-size: 16px;
+}
+
+.top_title{
+
+	padding-bottom:40px;
+	padding-top:40px;
+}
+
+.main_h2{
+	font-weight:700;
+}
+
+.side_h2{
+	margin-left: 11px;
+    font-size: 15px;
+    font-weight: normal;
+    letter-spacing: -0.01em;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+h2{
+	display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+
+/* ----------------------------- */
+
+.new_board{
+	width: 1200px;
+    margin: 40px auto 0 auto;
+}
+
+.new_board:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+.new_sw{
+	float:left;
+	position: relative;
+    width: 270px;
+    margin: 20px;
+}
+
+/* ---------------------------- */
+
+.cate_type{
+	margin-top:10px;
+	margin-bottom:5px;
+	
+}
+
+.new_sw .cate {
+    font-size: 14px;
+    color: #e60012;
+}
+
+.new_sw .type {
+    float: right;
+}
+
+.new_sw .mini_icon {
+    display: inline-block;
+    padding: 3px 5px;
+    border-radius: 3px;
+    background: #e60012;
+    font-size: 10px;
+    color: #fff;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+}
+
+.new_sw .mini_icon + .mini_icon {
+    margin-left: 5px;
+}
+
+/* ---------------------------------- */
+
+.new_sw .tit {
+    height: 44px;
+    margin-top: 7px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #111;
+    line-height: 22px;
+    overflow: hidden;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.new_sw .lang_kor {
+    position: absolute;
+    bottom: 2px;
+    right: 0;
+    width: 60px;
+    height: 36px;
+    display: block;
+    text-indent: -9999px;
+    overflow: hidden;
+    background-image:url('/image/lang_kor.png') no-repeat 0 0;
+} 
+
+.release_date{
+	margin-top: 10px;
+    font-size: 13px;
+    color: #737373;
+    line-height: 20px;
+}
+
+/*------------------------  */
+
+div{
+	display:block;
+}
+
+*, *:before, *:after {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+    vertical-align: top;
+    padding: 0;
+    margin: 0;
+    font-family: 'Malgun Gothic', '맑은 고딕', sans-serif;
+}
+
+/*-----------------------  */
+
+h1, h2{
+	padding-left:150px;
+}
+
+
+.search {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left:15px;
+    width: 75px;
+    height: 100%;
+    border-left: 1px solid #d9d9d9;
+    background: #fff;
+    font-size: 10px;
+
+}
+
+ul.nav {
+	/* ul태그의 기본 리스트스타일(disc) 제거 */
+	list-style-type: none;
+
+	/* ul태그의 기본 여백 제거 */
+	padding: 0;
+	margin: 0;
+}
+
+/* 메인 메뉴의 항목 */
+ul.nav > li {
+
+	float: left;
+ 	background-color:#fff;
+	font-size:18px;
+ 	height:100%; 
+	text-align:center;
+	line-height: 70px;
+	border: 1px solid #d9d9d9;
+	position: relative;
+	display: block;
+}
+
+/* 메인 메뉴의 항목 텍스트 */
+ul.nav > li > a {
+
+	/* 글자 색상 */
+	color: black;
+	
+	/* 글자 꾸밈선 제거 (underline 제거) */
+	text-decoration: none;
+	
+	font-size: 20px;	/* 글자 크기 */
+	/* font-weight: bold; */	/* 글자 모양: 굵게 */
+	font-family: 굴림 gulim 돋움 dotum;	/* 글꼴 */
+	
+	/* 내부 여백 */
+	/* 	-> 링크 클릭이 가능한 영역 */
+/* 	padding: 10px 15px; */
+	
+	/* 외부 여백 */
+	/* 	-> 링크 클릭이 불가능한 영역 */
+	margin: 0 5px;
+}
+
+/* 메인 메뉴의 항목 텍스트에 마우스를 올렸을 때 */
+ul.nav > li > a:hover {
+	color: red;
+}
+
+/* -------------------------------------------------- */
+
+/* 서브메뉴 */
+ul.nav > li > ul {
+	
+	/* HTML계층구조에서 빼내는 설정 */
+	/* 	-> 부모요소가 배경색을 같이 씌우지 않는다 */
+	position: absolute;
+	
+	/* ul태그의 기본 리스트 스타일(circle) 제거 */
+	list-style-type: none;
+	
+	/* ul태그의 기본 여백 제거 */
+	padding: 0;
+	margin: 0;
+	
+	/* 서브 메뉴 영역의 너비 */
+	width: 100%;
+	
+	border:1px solid rgb(230, 230, 230);
+	
+
+}
+
+/* 서브 메뉴의 항목 */
+ul.nav > li > ul > li {
+	
+	/* 배경색 지정 */
+	background-color: white;
+
+	/* 평소에 안보이도록 숨기기 */
+/* 	display: none; */
+
+	/* 평소에 안보이도록 숨기기 */
+	height: 0;	
+	font-size: 0;
+	line-height: 10px;
+}
+
+/* 메인 메뉴 항목에 마우스를 올렸을 때
+	서브 메뉴의 항목이 보이도록 설정하기 */
+ul.nav > li:hover > ul > li {
+	
+	height: 50px;	/* 보여질 컨텐츠 영역의 높이 지정 */
+	font-size: 12px;	/* 보여질 글자 크기 지정 */
+	line-height: 50px;	/* 보여질 줄간격 높이 지정 */
+	
+}
+
+/* 서브 메뉴의 항목 텍스트 */
+ul.nav > li > ul > li > a {
+	
+	/* 배경색 지정 */
+/* 	background-color: rgb(233, 233, 233); */
+
+	/* 글자색 지정 */
+	color: #333;
+
+	/* 글자 꾸밈선 제거 (underline 제거) */
+	text-decoration: none;
+
+	/* 부모 <li>태그 크기만큼 영역을 차지하도록 설정 */
+/* 	display: block; */
+}
+
+/* 서브 메뉴의 항목 텍스트에 마우스가 올라갔을 때 */
+ul.nav > li > ul > li > a:hover {
+	/* 글자색 지정 */
+	color: #c00;
+	
+}
+
+input {
+	vertical-align: middle;
+}
+
+input.search_button {
+        background: url( "image/search.png" ) no-repeat;
+        border: none;
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+      }
+
+input.logo_button{
+	background: url( "image/logo.gif") no-repeat;
+    border: none;
+    width: 130px;
+    height: 32px;
+    cursor: pointer;
+}
+
+input.buy_button{
+	background: url("image/buy.gif") no-repeat;
+    border: none;
+    width: 141px;
+	height: 70px;
+	cursor: pointer;
+}
+
+.show_button{
+	position: absolute;
+    top: 140px;
+    right: 150px;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 218px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    text-indent: -1.7em;
+    color: #e60012;
+    border: 2px solid #e60012;
+    background-image: url('image/Arrow.png');
+    background-position: calc(100% - 20px) center;
+    background-repeat: no-repeat;
+}
+
+/*--------------------------  */
+</style>
+
+<title>소프트웨어</title>
+</head>
+<body>
+
+<div>
+
+<ul class="nav">
+	<li style="background-color: #e60012; width:215px;"><input type="button" class="logo_button"></li>
+
+	<li style="width:215px;">Nintendo Switch
+		<ul>
+			<li>Nintendo Switch OLED 모델</li>
+			<li>Nintendo Switch</li>
+			<li>Nintendo Switch Lite</li>
+			<li>기능ㆍ특징을 비교</li>
+			<li>주변기기</li>
+			<li>Nintendo Switch Online</li>
+			<li>Nintendo 지킴이 Switch™</li>
+			<li>닌텐도 e숍</li>
+		</ul>
+	</li>
+
+	<li style="width:215px;">닌텐도 3DS
+		<ul>
+			<li>닌텐도 3DS란?</li>
+			<li>New 닌텐도 3DS XL</li>
+			<li>New 닌텐도 2DS XL</li>
+			<li>기타 시리즈</li>
+			<li>닌텐도 e숍</li>
+		</ul>
+	</li>
+
+	<li style="width:215px;">소프트웨어
+		<ul>
+			<li>Nintendo Switch 소프트웨어</li>
+			<li >닌텐도 3DS 소프트웨어</li>
+			<li>발매 예정 소프트웨어</li>
+			<li>스마트폰용 앱</li>
+		</ul>
+	</li>
+
+	<li style="width:215px;">고객지원
+		<ul>
+			<li>Nintendo Switch 고객지원</li>
+			<li>Nintendo Switch Online 서포트</li>
+			<li>닌텐도 3DS 고객지원</li>
+			<li>고객지원 홈페이지</li>
+			<li>네트워크 장애 발생 상황</li>
+		</ul>
+	</li>
+
+	<li style="width:215px;">News
+		<ul>
+			<li>News</li>
+			<li>보도자료</li>
+			<li>알림</li>
+			<li>이벤트</li>
+		</ul>
+	</li>
+	<li class="eshop"><input type="button" class="buy_button"></li>
+	<li class="search"><input type="button" class="search_button"></li>
+	
+</ul>
+</div>
+<!-- ------------------------------------------ -->
+<hr>
+
+<br><br>
+<div class="top_title">
+
+	<h1><br><br>Nintendo Switch 소프트웨어</h1>
+	<a class="show_button">전체 소프트웨어 보기</a>
+</div>
+
+<div style="text-align:center;">
+	<img src="image/xeno.jpg" width=80%;>
+	<img src="image/fire.jpg" width=80%>
+	<img src="image/mario.jpg" width=80%>
+	<img src="image/sports.jpg" width=80%>
+	<img src="image/animal2.jpg" width=80%>
+	<img src="image/star.jpg" width=80%>
+	<img src="image/legends.jpg" width=40%;>
+	<img src="image/diamond.jpg" width=40%;>
+	<img src="image/animal.jpg" width=40%;>
+	<img src="image/ring.jpg" width=40%;>
+
+</div>
+
+<br><br><br><br><br>
+
+<div class="new_article">
+<br><br>
+<h2 class="main_h2">최신 소프트웨어
+	<span class="side_h2">New Title</span>
+</h2>
+
+<div class="new_board">	
+<!-- ----------------------------- -->
+<div class="new_sw" id="sw_item"> 
+
+	<img src="image/gundam.jpg"><br>
+
+	<div class="cate_type">
+	<span class="cate">Nintendo Switch</span>
+	<span class="type">
+		<strong class="mini_icon">PK</strong>
+		<strong class="mini_icon">DL</strong>
+	</span>
+</div>
+
+<p class="tit">SD건담 배틀 얼라이언스</p>
+<p class="lang_kor">한국어 대응</p>
+<p class="release_date">2022.09.09<br>한국닌텐도</p>
+</div>
+
+<!-- ----------------------------- -->
+<div class="new_sw" id="sw_item"> 
+
+	<img src="image/divorce.jpg"><br>
+
+	<div class="cate_type">
+	<span class="cate">Nintendo Switch</span>
+	<span class="type">
+		<strong class="mini_icon">DL</strong>
+		<strong class="mini_icon">체험판</strong>
+	</span>
+</div>
+
+<p class="tit">나의 이혼 이야기</p>
+<p class="lang_kor">한국어 대응</p>
+<p class="release_date">2022.08.18<br>CFK</p>
+</div>
+
+<!-- ----------------------------- -->
+<div class="new_sw" id="sw_item"> 
+
+	<img src="image/move.jpg"><br>
+
+	<div class="cate_type">
+	<span class="cate">Nintendo Switch</span>
+	<span class="type">
+		<strong class="mini_icon">DL</strong>
+	</span>
+</div>
+
+<p class="tit">Move or Die: Unleashed</p>
+<p class="lang_kor">한국어 대응</p>
+<p class="release_date">2022.08.18<br>Beep</p>
+</div>
+
+<!-- ----------------------------- -->
+<div class="new_sw" id="sw_item"> 
+
+	<img src="image/dream.jpg"><br>
+
+	<div class="cate_type">
+	<span class="cate">Nintendo Switch</span>
+	<span class="type">
+		<strong class="mini_icon">PK</strong>
+		<strong class="mini_icon">DL</strong>
+	</span>
+</div>
+
+<p class="tit">커비의 드림 뷔페</p>
+<p class="lang_kor">한국어 대응</p>
+<p class="release_date">2022.08.17<br>한국닌텐도</p>
+</div>
+
+<!-- ----------------------------- -->
+<div class="new_sw" id="sw_item"> 
+
+	<img src="image/cult.jpg"><br>
+
+	<div class="cate_type">
+	<span class="cate">Nintendo Switch</span>
+	<span class="type">
+		<strong class="mini_icon">DL</strong>
+	</span>
+</div>
+
+<p class="tit">Cult of the Lamb</p>
+<p class="lang_kor">한국어 대응</p>
+<p class="release_date">2022.08.12<br>Devolver Digital</p>
+</div>
+
+<!-- ----------------------------- -->
+<div class="new_sw" id="sw_item"> 
+
+	<img src="image/puzzle.jpg"><br>
+
+	<div class="cate_type">
+	<span class="cate">Nintendo Switch</span>
+	<span class="type">
+		<strong class="mini_icon">DL</strong>
+	</span>
+</div>
+
+<p class="tit">직소 펀: 함께 푸는 퍼즐!</p>
+<p class="lang_kor">한국어 대응</p>
+<p class="release_date">2022.08.11<br>Mindscape</p>
+</div>
+
+<!-- ----------------------------- -->
+<div class="new_sw" id="sw_item"> 
+
+	<img src="image/hind.jpg"><br>
+
+	<div class="cate_type">
+	<span class="cate">Nintendo Switch</span>
+	<span class="type">
+		<strong class="mini_icon">DL</strong>
+	</span>
+</div>
+
+<p class="tit">Hindsight</p>
+<p class="lang_kor">한국어 대응</p>
+<p class="release_date">2022.08.05<br>Annapurna Interactive</p>
+</div>
+
+<!-- ----------------------------- -->
+<div class="new_sw" id="sw_item"> 
+
+	<img src="image/monster.png"><br>
+
+	<div class="cate_type">
+	<span class="cate">Nintendo Switch</span>
+	<span class="type">
+		<strong class="mini_icon">DL</strong>
+	</span>
+</div>
+
+<p class="tit">괴물 구축함</p>
+<p class="lang_kor">한국어 대응</p>
+<p class="release_date">2022.08.04<br>Elusor</p>
+</div>
+
+
+
+</div>
+</div>
+
+</body>
+</html>
