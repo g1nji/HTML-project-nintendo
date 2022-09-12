@@ -5,7 +5,7 @@
 <title>Nintendo</title>
 
 <!-- css파일로드 -->
-<link href="https://www.nintendo.co.kr/css/common.css?v=201805311412" type="text/css" rel="stylesheet">
+<!-- <link href="https://www.nintendo.co.kr/css/common.css?v=201805311412" type="text/css" rel="stylesheet">-->
 
 <style>
 .w50fleft{
@@ -36,15 +36,117 @@
 	margin-bottom:70px;
 }
 
+.menuUl{
+	list-style:none;
+	margin:0;
+}
+
+.menuLi{
+	float: left;
+    border: 1px solid #eeeeee;
+    width: 215px;
+    font-size: 17pt;
+    height: 73px;
+    text-align: center;
+    line-height: 74px;
+    background-color: white;
+}
+
+.menuLi:hover>a{
+	color:red;
+}
+
+.subUl{
+    display: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 11pt;
+    line-height: 35px;
+    text-align: left;
+    background-color: #F5F5F5;
+    border: 1px solid #eeeeee;
+    padding-left: 5px;
+}
+
+
+a{
+	text-decoration:none;
+	color: #000000;
+}
+
+.bottom ul, .bottom li{
+	list-style: none;
+}
+
+.bottom_nav>ul>li{
+	float: left;
+	width: 25%;
+	text-align: center;
+}
+
+.bottom_nav{
+    width: 1200px;
+    margin: 60px auto 0 auto;
+    text-align: center;
+}
+
+.sns>li{
+	float: left;
+	margin-right: 25px;
+	display:inline-block;
+}
+
+.sns a{
+	display: inline-block;
+	background-repeat: no-repeat;
+	font-size:0;
+	background-image:url(https://www.nintendo.co.kr/images/renew/common/bottom.png);
+	width: 60px; height: 60px;
+}
+
+.sns{
+	padding-left: 188px;
+}
+
+.btnBox a{
+	display: inline-block;
+	background-repeat: no-repeat;
+	font-size:0;
+	background-image:url(https://www.nintendo.co.kr/images/renew/common/bottom.png);
+	width: 370px;
+    height: 60px;
+}
+
+.logo_nintendo_red{
+    display: inline-block;
+    height: 29px;
+    background: url(https://www.nintendo.co.kr/images/renew/common/top.png) no-repeat top left;
+    font-size: 0;
+    text-indent: -99999px;
+    width: 130px;
+    vertical-align: middle;
+}
+
+.navi{
+	position: relative;
+    padding: 35px 0;
+    background: #e60012;
+}
+
 </style>
 </head>
 
-<body>
+<body style= "margin: 0;">
 
-<header>
-	<h1><a href="https://www.nintendo.co.kr/main.php">Nintendo</a></h1>
-	<nav class="menuNav">
-		<ul>
+<header style="height:90px;">
+	<h1 style="width: 200px; background-color:#e60012; margin:0; position: fixed; top: 0;">
+		<a style="background:url(https://www.nintendo.co.kr/images/renew/common/logo_nintendo_red.gif) no-repeat center center; font-size:0; height:74px; display:block;" href="https://www.nintendo.co.kr/main.php">Nintendo</a>
+	</h1>
+	
+	<div>
+	<nav style="position:fixed; top:0; margin-left: 160px; height:74px;"" class="menuNav">
+		<ul style="margin: 0;" class="menuUl">
 			<li class="menuLi">
 				<a href="https://www.nintendo.co.kr/hardware/">Nintendo Switch</a>
 				<ul class="subUl">
@@ -82,7 +184,7 @@
                 <a href="https://www.nintendo.co.kr/support/index.php" class="on">고객지원</a>
          		<ul class="subUl">
                     <li><a href="https://www.nintendo.co.kr/support/switch/index.php">Nintendo Switch 고객지원</a></li>
-                    <li><a href="https://www.nintendo.co.kr/support/switch/nintendo_switch_online/">Nintendo Switch Online 서포트</a></li>
+                    <li style="line-height: 20px;"><a href="https://www.nintendo.co.kr/support/switch/nintendo_switch_online/">Nintendo Switch Online<br> 서포트</a></li>
                     <li><a rel="nosublink" href="https://www.nintendo.co.kr/3DS/customer/index.php">닌텐도 3DS 고객지원</a></li>
                     <li><a href="https://support.nintendo.co.kr/index.do">고객지원 홈페이지</a></li>
                     <li><a href="https://www.nintendo.co.jp/netinfo/ko_KR/index.html" target="_blank">네트워크 장애 발생 상황</a></li>
@@ -98,14 +200,18 @@
                     <li><a href="https://www.nintendo.co.kr/news/list.php?cate=4">이벤트</a></li>
                 </ul>
             </li>
-            
+            	
+            <li style="width: 120px; line-height: 35px;"class="menuLi">
+   				<a href="https://store.nintendo.co.kr/" class="btn_eshop" target="_blank">다운로드 구입</a>
+   			 </li>
+    
+    		<li style="width: 100px;" class="menuLi">
+    			<a href="#" class="btn_search">검색</a>
+		    	
+		    </li>
 		</ul>
 	</nav>
-
-    <a href="https://store.nintendo.co.kr/" class="btn_eshop" target="_blank">다운로드 구입</a>
-    <a href="#" class="btn_search">검색</a>
-    <!-- 검색 기능 구현 못함 -->
-
+	</div>
 </header>
 
 <article style="text-align:center;">
@@ -157,31 +263,29 @@
  <div class="navi">
     <div class="inner">
         <div class="location">
-            <h1 class="logo_nintendo_red">Nintendo</h1> &gt;
-            <a href="https://www.nintendo.co.kr/support/index.php">고객지원</a>
+            <h1 class="logo_nintendo_red">Nintendo</h1> 
+            <a style="color:white;" href="https://www.nintendo.co.kr/support/index.php"> &gt; 고객지원</a>
         </div>
-        <a href="#" class="btn_gotoTop">top으로 이동</a>
+        <a style="float: right; height: 25px; border: 2px solid #fff; border-radius: 15px; width: 25px; color: white; text-align: center; margin-right: 10px;" href="#" class="btn_gotoTop">▲</a>
     </div>
 </div>
 
-<section class="bottom">
-    <div class="inner">
-      <div class="link">
-        <ul class="sns">
-          <li><a class="ico_youtube" href="https://www.youtube.com/channel/UCRCK5FCJtomQT3b88jXI_DA" target="_blank">유튜브</a></li>
-          <li><a class="ico_kakaoStory" href="https://story.kakao.com/ch/nintendokorea/" target="_blank">카카오스토리</a></li>
-          <li><a class="ico_facebook" href="https://www.facebook.com/Nintendo.kr" target="_blank">페이스북</a></li>
-          <li><a class="ico_twitter" href="https://twitter.com/Nintendo_Korea" target="_blank">트위터</a></li>
-          <li><a class="ico_kakaoChannel" href="https://pf.kakao.com/_Xxiwzxj" target="_blank">카카오채널</a></li>
+<section style="padding: 40px 0;" class="bottom">
+    <div style="width: 1200px; margin: 0 auto;">
+      <div style="text-align: center;" class="link">
+        <ul style="text-align: center;" class="sns">
+          <li><a style=" background-position:0 -160px;" class="ico_youtube" href="https://www.youtube.com/channel/UCRCK5FCJtomQT3b88jXI_DA" target="_blank">유튜브</a></li>
+          <li><a style=" background-position:-70px -160px;" class="ico_kakaoStory" href="https://story.kakao.com/ch/nintendokorea/" target="_blank">카카오스토리</a></li>
+          <li><a style=" background-position:-140px -160px;" class="ico_facebook" href="https://www.facebook.com/Nintendo.kr" target="_blank">페이스북</a></li>
+          <li><a style=" background-position:-210px -160px;" class="ico_twitter" href="https://twitter.com/Nintendo_Korea" target="_blank">트위터</a></li>
+          <li><a style=" background-position:-280px -160px;" class="ico_kakaoChannel" href="https://pf.kakao.com/_Xxiwzxj" target="_blank">카카오채널</a></li>
         </ul>
 		<div class="btnBox">
 			<a class="ico_myNintendo" href="https://my.nintendo.com/" target="_blank">My Nintendo</a>
-			<a class="ico_amiibo" href="/amiibo/index.php" target="_blank">amiibo</a>
+			<a style="background:url(https://www.nintendo.co.kr/images/renew/common/btn_footer_amiibo.png) no-repeat top left"class="ico_amiibo" href="/amiibo/index.php" target="_blank">amiibo</a>
 		</div>
       </div>
-        <!-- //link end -->
-    </div>
-      <!-- //inner end -->
+   </div>
 
 	<div class="bottom_nav">
 		<ul>
@@ -225,11 +329,11 @@
 
 
 
-  <footer>
-    <div class="inner">
+  <footer style="padding: 30px 0; background: #f5f5f5;">
+    <div style=" width: 1200px; margin: 0 auto;"class="inner">
 	  <div class="btnTerms">
-		<a href="https://www.nintendo.co.kr/common/account.php">이용약관</a>
-		<a href="https://www.nintendo.co.kr/common/privacy.php">개인정보취급방침</a>
+		<a style="display: inline-block;" href="https://www.nintendo.co.kr/common/account.php">이용약관</a>
+		<a style="display: inline-block;" href="https://www.nintendo.co.kr/common/privacy.php">개인정보취급방침</a>
 	  </div>
 	  <p class="f_cs_info">고객지원 문의전화 : 1670-9900 <span class="bl_m">(평일 오전 9시 30분~오후 5시 30분)</span><span class="bl">※ 토/일/공휴일/회사 정기휴일 및 특별휴일 제외</span></p>
 
@@ -238,7 +342,7 @@
       <span>대표자명 : 미우라 타카히로</span>
       사업자등록번호 : 120-87-03578</address>
     </div>
-      <!-- //inner end -->
+      
   </footer>
-  <!-- //footer -->
+  
 </body></html>
