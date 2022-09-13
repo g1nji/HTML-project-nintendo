@@ -4,6 +4,7 @@ body {
 	margin: 0 auto;
 	padding: 0;
 	border: 0;
+	background-color: #e60012;
 }
 
 nav {
@@ -143,15 +144,105 @@ article > div {
 	margin: 10px;
 }
 
-.line {
-	margin-top: 50px;
-	background-color: #fff;
-	height: 3px;
-}
-
 #article3 > div {
 	height: 100px;
 	float: left;
+}
+
+.clearfix {
+	clear:both;
+	
+	/* 컨텐츠 영역 없애기 */
+	width: 0;
+	height: 0;
+	
+	/* 내용물이 컨텐츠영역을 넘었을 때 안보이도록 설정하기 */
+	overflow: hidden;
+}
+
+article > div {
+	text-align: center;
+}
+
+#switch {
+	float:left;
+}
+
+#switch_oled {
+	float:left;
+}
+
+#switch_lite {
+	float:left;
+}
+
+#article2 {
+	background-color: #e60012;
+	text-align: center;
+}
+
+.wbtn {
+	width: 500px;
+	height: 80px;
+	background-color: #e60012;
+	color: #fff;
+	font-size: 15pt;
+	font-weight: bold;
+	border:1px solid #fff;
+	margin: 10px;
+}
+
+#main2 {
+	border-top: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	margin: 0 auto;
+	height: 415px;
+}
+
+#main2 > article {
+	width: 100%;
+	height: 206px;
+	border-bottom: 2px solid #fff;
+}
+
+.btnInner {
+	padding-left: 17%;
+	float: left;
+	width: 60%;
+	text-align: right;
+	box-sizing: border-box;
+}
+
+.logoimg {
+	float: left;
+	margin: 38px 50px 0 0;
+	height: 100%
+}
+
+.centerimg {
+	float: left;
+	margin: -23px 0 0 0;
+	height: 100%;
+}
+
+.text1 {
+	text-align: left;
+	width: 40%;
+	color: #fff;
+	float: left;
+	box-sizing: border-box;
+	padding-left: 30px;
+	padding-right: 17%;
+	margin: 50px 0;
+}
+
+.text1 > span {
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.text1 > p {
+	font-size: 14px;
 }
 
 footer {
