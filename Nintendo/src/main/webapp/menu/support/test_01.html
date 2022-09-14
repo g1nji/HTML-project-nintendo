@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Nintendo</title>
+
+<!-- css파일로드 -->
+<!-- <link href="https://www.nintendo.co.kr/css/common.css?v=201805311412" type="text/css" rel="stylesheet">-->
+
+<style>
+.w50fleft{
+	width:50%; 
+	float:left;
+	font-size:18px;
+	font-weight:bold;
+}
+
+.w50fleft:hover span, .ml50:hover span {
+	color:red;
+}
+
+.ml50{
+	margin-left:50%;
+	font-size:18px;
+	font-weight:bold;
+}
+
+.menuNav .menuLi:hover .subUl{
+	display: block;
+}
+
+.mainDiv{
+	width:80%; 
+	display:inline-block; 
+	text-align:center; 
+	margin-bottom:70px;
+}
+
+.menuUl{
+	list-style:none;
+	margin:0;
+}
+
+.menuLi{
+	float: left;
+    border: 1px solid #eeeeee;
+    width: 215px;
+    font-size: 17pt;
+    height: 73px;
+    text-align: center;
+    line-height: 74px;
+    background-color: white;
+}
+
+.menuLi:hover>a{
+	color:red;
+}
+
+.subUl{
+    display: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 11pt;
+    line-height: 35px;
+    text-align: left;
+    background-color: #F5F5F5;
+    border: 1px solid #eeeeee;
+    padding-left: 5px;
+}
+
+
+a{
+	text-decoration:none;
+	color: #000000;
+}
+
+.bottom ul, .bottom li{
+	list-style: none;
+}
+
+.bottom_nav>ul>li{
+	float: left;
+	width: 25%;
+	text-align: center;
+}
+
+.bottom_nav{
+    width: 1200px;
+    margin: 60px auto 0 auto;
+    text-align: center;
+}
+
+.sns>li{
+	float: left;
+	margin-right: 25px;
+	display:inline-block;
+}
+
+.sns a{
+	display: inline-block;
+	background-repeat: no-repeat;
+	font-size:0;
+	background-image:url(https://www.nintendo.co.kr/images/renew/common/bottom.png);
+	width: 60px; height: 60px;
+}
+
+.sns{
+	padding-left: 188px;
+}
+
+.btnBox a{
+	display: inline-block;
+	background-repeat: no-repeat;
+	font-size:0;
+	background-image:url(https://www.nintendo.co.kr/images/renew/common/bottom.png);
+	width: 370px;
+    height: 60px;
+}
+
+.logo_nintendo_red{
+    display: inline-block;
+    height: 29px;
+    background: url(https://www.nintendo.co.kr/images/renew/common/top.png) no-repeat top left;
+    font-size: 0;
+    text-indent: -99999px;
+    width: 130px;
+    vertical-align: middle;
+}
+
+.navi{
+	position: relative;
+    padding: 35px 0;
+    background: #e60012;
+}
+
+</style>
+</head>
+
+<body style= "margin:0;">
+
+<header style="height:90px;">
+	<h1 style="width: 200px; background-color:#e60012; margin:0; position: fixed; top: 0;">
+		<a style="background:url(https://www.nintendo.co.kr/images/renew/common/logo_nintendo_red.gif) no-repeat center center; font-size:0; height:74px; display:block;" href="https://www.nintendo.co.kr/main.php">Nintendo</a>
+	</h1>
+	
+	<div>
+	<nav style="position:fixed; top:0; margin-left: 160px; height:74px;"" class="menuNav">
+		<ul style="margin: 0;" class="menuUl">
+			<li class="menuLi">
+				<a href="https://www.nintendo.co.kr/hardware/">Nintendo Switch</a>
+				<ul class="subUl">
+                    <li><a href="https://www.nintendo.co.kr/hardware/detail/switch-oled/index.php">Nintendo Switch OLED 모델</a></li>
+                    <li><a href="https://www.nintendo.co.kr/hardware/detail/switch/index.php">Nintendo Switch </a></li>
+                    <li><a href="https://www.nintendo.co.kr/hardware/detail/switch-lite/index.php">Nintendo Switch Lite</a></li>
+                    <li><a href="https://www.nintendo.co.kr/hardware/compare/index.php">기능ㆍ특징을 비교</a></li>
+                    <li><a href="https://www.nintendo.co.kr/hardware/accessories/index.php">주변기기</a></li>
+                    <li><a href="https://www.nintendo.co.kr/switch/onlineservice/index.php">Nintendo Switch Online</a></li>
+                    <li><a href="https://www.nintendo.co.kr/switch/parentalcontrols/index.php">Nintendo 지킴이 Switch™ </a></li>
+                    <li><a href="https://www.nintendo.co.kr/support/switch/eshop/index.php">닌텐도 e숍</a></li>
+                </ul>
+				
+			</li>	
+                
+            <li class="menuLi">
+                <a href="https://www.nintendo.co.kr/software/switch/index.php">소프트웨어</a>
+                <ul class="subUl">
+                    <li><a href="https://www.nintendo.co.kr/software/switch/index.php">Nintendo Switch 소프트웨어</a></li>
+                    <li><a href="https://www.nintendo.co.kr/software/3ds/index.php">닌텐도 3DS 소프트웨어</a></li>
+                    <li><a href="https://www.nintendo.co.kr/software/release">발매 예정 소프트웨어</a></li>
+                    <li><a href="https://www.nintendo.co.kr/software/smartphone">스마트폰용 앱</a></li>
+                </ul>
+            </li>    
+                
+            <li class="menuLi">
+            	<a href="https://www.nintendo.co.kr/character/splatoon/">캐릭터</a>
+            	<ul class="subUl">
+                    <li><a href="https://www.nintendo.co.kr/character/splatoon/">스플래툰 베이스 홈페이지</a></li>
+                    <li><a href="https://www.nintendo.co.kr/character/kirby/">별의 커비 공식 홈페이지</a></li>
+                </ul>
+            </li>
+            
+            <li class="menuLi">
+                <a href="https://www.nintendo.co.kr/support/index.php" class="on">고객지원</a>
+         		<ul class="subUl">
+                    <li><a href="https://www.nintendo.co.kr/support/switch/index.php">Nintendo Switch 고객지원</a></li>
+                    <li style="line-height: 20px;"><a href="https://www.nintendo.co.kr/support/switch/nintendo_switch_online/">Nintendo Switch Online<br> 서포트</a></li>
+                    <li><a rel="nosublink" href="https://www.nintendo.co.kr/3DS/customer/index.php">닌텐도 3DS 고객지원</a></li>
+                    <li><a href="https://support.nintendo.co.kr/index.do">고객지원 홈페이지</a></li>
+                    <li><a href="https://www.nintendo.co.jp/netinfo/ko_KR/index.html" target="_blank">네트워크 장애 발생 상황</a></li>
+                </ul>
+            </li>
+            
+            <li class="menuLi">   
+                <a href="https://www.nintendo.co.kr/news/list.php">News</a>  
+                <ul class="subUl">
+                    <li><a href="https://www.nintendo.co.kr/news/list.php?cate=1">News</a></li>
+                    <li><a href="https://www.nintendo.co.kr/news/list.php?cate=2">보도자료</a></li>
+                    <li><a href="https://www.nintendo.co.kr/news/list.php?cate=3">알림</a></li>
+                    <li><a href="https://www.nintendo.co.kr/news/list.php?cate=4">이벤트</a></li>
+                </ul>
+            </li>
+            	
+            <li style="width: 120px; line-height: 35px;"class="menuLi">
+   				<a href="https://store.nintendo.co.kr/" class="btn_eshop" target="_blank">다운로드 구입</a>
+   			 </li>
+    
+    		<li style="width: 100px;" class="menuLi">
+    			<a href="#" class="btn_search">검색</a>
+		    	
+		    </li>
+		</ul>
+	</nav>
+	</div>
+</header>
+
+<article style="text-align:center;">
+	<div style="height:100px; margin-top:50px" class="top-header">
+    	<h1 style="text-align:center; font-size:40px;" class="top-header"><span class="top-header-heading__text">고객지원</span></h1>
+    </div>
+
+    	<div class="mainDiv">
+			<div class="Nintendo Switch w50fleft">
+        		<a href="https://www.nintendo.co.kr/support/switch/index.php">
+        			<div class="top-category-img">
+       					<img src="https://www.nintendo.co.kr/support/img/index/img01.jpg" alt="">
+    				</div>
+        			<p><span style="color:red;"> ● </span><span>Nintendo Switch</span></p>
+        		</a>
+        	</div>       
+
+     	<div class="Nintendo 3DS sereies ml50">
+     		<a href="https://www.nintendo.co.kr/3DS/customer/index.php">
+        		<div class="top-category__img"><img src="https://www.nintendo.co.kr/support/img/index/img02.jpg" alt=""></div>
+            		<p><span style="color:red;"> ● </span><span>닌텐도 3DS 시리즈</span></p>
+        	</a>
+     	</div>
+     </div>
+        
+        <div class="mainDiv">
+ 			<div class="Game＆watch w50fleft">
+        		<a href="https://www.nintendo.co.kr/support/game_watch/zelda/index.php">
+            		<div class="top-category__img"><img src="https://www.nintendo.co.kr/support/img/index/img-gw.jpg" alt=""></div>
+                		<p><span style="color:red;"> ● </span><span>게임＆워치 젤다의 전설</span></p>
+            	</a>
+        	</div>
+        
+        	<div class="other ml50">
+        		<a href="https://www.nintendo.co.kr/support/other/index.php">
+            		<p><span style="color:red;"> ● </span><span>기타</span></p>
+            	</a>
+        	</div> 
+        </div>     
+        
+        <div style="text-align:center; margin-top:30px; margin-bottom:80px; line-height:5px;">
+        <p style="font-size:15px;">고객지원 문의전화 : <strong>1670-9900</strong></p>
+        	<span style="font-size:13px; color:gray; line-height:25px;"><br>(평일 오전 9시 30분~오후 5시 30분)</br>※ 토/일/공휴일/회사 정기휴일 및 특별휴일 제외</span>
+        </div>
+    </article>
+
+
+<!-- 하단 -->
+ <div class="navi">
+    <div class="inner">
+        <div class="location">
+            <h1 class="logo_nintendo_red">Nintendo</h1> 
+            <a style="color:white;" href="https://www.nintendo.co.kr/support/index.php"> &gt; 고객지원</a>
+        </div>
+        <a style="float: right; height: 25px; border: 2px solid #fff; border-radius: 15px; width: 25px; color: white; text-align: center; margin-right: 10px;" href="#" class="btn_gotoTop">▲</a>
+    </div>
+</div>
+
+<section style="padding: 40px 0; height: 300px;" class="bottom">
+    <div style="width: 1500px; margin: 0 auto;">
+      <div style="text-align: center;" class="link">
+        <ul style="text-align: center;" class="sns">
+          <li><a style=" background-position:0 -160px;" class="ico_youtube" href="https://www.youtube.com/channel/UCRCK5FCJtomQT3b88jXI_DA" target="_blank">유튜브</a></li>
+          <li><a style=" background-position:-70px -160px;" class="ico_kakaoStory" href="https://story.kakao.com/ch/nintendokorea/" target="_blank">카카오스토리</a></li>
+          <li><a style=" background-position:-140px -160px;" class="ico_facebook" href="https://www.facebook.com/Nintendo.kr" target="_blank">페이스북</a></li>
+          <li><a style=" background-position:-210px -160px;" class="ico_twitter" href="https://twitter.com/Nintendo_Korea" target="_blank">트위터</a></li>
+          <li><a style=" background-position:-280px -160px;" class="ico_kakaoChannel" href="https://pf.kakao.com/_Xxiwzxj" target="_blank">카카오채널</a></li>
+        </ul>
+		<div class="btnBox">
+			<a class="ico_myNintendo" href="https://my.nintendo.com/" target="_blank">My Nintendo</a>
+			<a style="background:url(https://www.nintendo.co.kr/images/renew/common/btn_footer_amiibo.png) no-repeat top left"class="ico_amiibo" href="/amiibo/index.php" target="_blank">amiibo</a>
+		</div>
+      </div>
+   </div>
+
+	<div class="bottom_nav">
+		<ul>
+			<li>
+				<a style="text-align:center; margin-left:50px;" href="#"><b>한국닌텐도</b></a>
+				<ul>
+					<li><a style="color:gray;" href="https://www.nintendo.co.kr/corporate/kr/kr01.html">- 회사개요</a></li>
+					<li><a style="color:gray;" href="https://www.nintendo.co.kr/corporate/kr/kr04.html">- 찾아오시는 길</a></li>
+				</ul>
+			</li>
+			<li>
+				<a style="text-align:center; margin-left:50px;" href="#"><b>본체 / amiibo</b></a>
+				<ul>
+					<li><a style="color:gray;" href="https://www.nintendo.co.kr/switch/index.php">- Nintendo Switch</a></li>
+					<li><a style="color:gray;" href="https://www.nintendo.co.kr/n3ds/new_3dsXl.php">- New 닌텐도 3DS XL</a></li>
+					<li><a style="color:gray;" href="https://www.nintendo.co.kr/n3ds/new_2dsXl.php">- New 닌텐도 2DS XL</a></li>
+					<li><a style="color:gray;" href="https://www.nintendo.co.kr/amiibo/index.php">- amiibo</a></li>
+				</ul>
+			</li>
+			<li>
+				<a style="text-align:center; margin-left:50px;" href="#"><b>소프트웨어</b></a>
+				<ul>
+					<li><a style="color:gray;" href="https://www.nintendo.co.kr/software/switch/">- Nintendo Switch 소프트웨어</a></li>
+					<li><a style="color:gray;" href="https://www.nintendo.co.kr/software/3ds/">- 닌텐도 3DS 소프트웨어</a></li>
+                    <li><a style="color:gray;" href="https://www.nintendo.co.kr/software/release/">- 발매 예정 소프트웨어</a></li>
+                    <li><a style="color:gray;" href="https://www.nintendo.co.kr/software/smartphone/">- 스마트폰용 앱</a></li>
+				</ul>
+			</li>
+			<li>
+				<a style="text-align:center; margin-left:50px;" href="#"><b>고객지원</b></a>
+				<ul>
+					<li><a style="color:gray;" href="https://www.nintendo.co.kr/support/switch/index.php">- Nintendo Switch</a></li>
+					<li><a style="color:gray;" href="https://www.nintendo.co.kr/3DS/customer/index.php">- 닌텐도 3DS</a></li>
+					<li><a style="color:gray;" href="https://support.nintendo.co.kr/index.do" target="_blank">- 고객지원 홈페이지</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+ 
+  </section>
+
+
+
+<footer style="padding: 30px 0; background: #f5f5f5;">
+    <div style= "width: 1200px; margin: 0 auto;">
+		<a style="display:inline-block; font-size:14px; color:#737373; vertical-align:top;" 
+		href="https://www.nintendo.co.kr/common/account.php">이용약관</a>
+		<a style="display: inline-block; margin-left:10px; padding-left:10px; border-left:1px solid #737373; display: inline-block; font-size: 14px; color: #737373; vertical-align: top;" 
+		href="https://www.nintendo.co.kr/common/privacy.php">개인정보취급방침</a>
+	</div>
+	
+	<div style="text-align:right; font-size:14px; color:#737373; letter-spacing:-0.07em; line-height:155%; margin-right:151px;">
+		<p>고객지원 문의전화 : 1670-9900 <span>(평일 오전 9시 30분~오후 5시 30분)</span><p>※ 토/일/공휴일/회사 정기휴일 및 특별휴일 제외</p></p>
+	</div> 
+	
+	<div>
+      <address style="font-size:14px; line-height:24px; color:#737373; margin-left:151px;">ⓒ 2006 Nintendo of Korea Co., Ltd. All Rights Reserved.<br>
+      <span style="display:inline-block; margin-right:15px;">상호명 : 한국닌텐도주식회사</span>
+      <span style="display:inline-block; margin-right: 5px;">대표자명 : 미우라 타카히로</span>
+      사업자등록번호 : 120-87-03578</address>
+    </div>
+</footer>
+  
+</body>
+
+</html>
